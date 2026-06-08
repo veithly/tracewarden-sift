@@ -1,0 +1,9 @@
+{"evidence_root": "examples/evidence/case-alpha", "message": "evidence root locked", "stage": "seal", "ts": "2026-06-08T11:07:45Z"}
+{"message": "collect timeline, authentication, PowerShell, registry, and network evidence", "stage": "plan", "ts": "2026-06-08T11:07:45Z"}
+{"message": "timeline parsed", "rows": 7, "stage": "tool", "ts": "2026-06-08T11:07:45Z"}
+{"message": "authentication log parsed", "rows": 4, "stage": "tool", "ts": "2026-06-08T11:07:45Z"}
+{"count": 2, "message": "initial claims proposed", "stage": "claim", "ts": "2026-06-08T11:07:45Z"}
+{"message": "unsupported claim revoked; rerouting to additional artifacts", "revoked": ["CLAIM-004"], "stage": "correct", "ts": "2026-06-08T11:07:45Z"}
+{"message": "reroute parsers completed", "parsers": ["powershell", "registry", "network"], "stage": "tool", "ts": "2026-06-08T11:07:45Z"}
+{"confirmed": 16, "f1": 1.0, "false_negative_ids": [], "false_negatives": 0, "false_positive_ids": [], "hallucinated_claim_ids": [], "message": "accuracy scored", "precision": 1.0, "recall": 1.0, "revoked": 1, "stage": "verify", "total_claims": 17, "true_positives": 16, "ts": "2026-06-08T11:07:45Z"}
+{"message": "reports written", "paths": {"accuracy_json": "runs/demo/accuracy_report.json", "accuracy_markdown": "runs/demo/accuracy_report.md", "claim_receipts": "runs/demo/claim_receipts.json", "execution_log": "runs/demo/execution_log.jsonl", "incident_html": "runs/demo/incident_report.html"}, "stage": "write", "ts": "2026-06-08T11:07:45Z"}

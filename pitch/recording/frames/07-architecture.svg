@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  
+  <defs>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <pattern id="grid" width="52" height="52" patternUnits="userSpaceOnUse">
+      <path d="M 52 0 L 0 0 0 52" fill="none" stroke="#1c313a" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="#081016"/>
+  <rect width="1920" height="1080" fill="url(#grid)" opacity="0.30"/>
+  <circle cx="1560" cy="150" r="390" fill="#45d4c8" opacity="0.10"/>
+  <circle cx="120" cy="1040" r="420" fill="#f2b760" opacity="0.07"/>
+  <text x="78" y="70" font-family="Menlo, Consolas, monospace" font-size="20" fill="#45d4c8" letter-spacing="2">ARCHITECTURE</text>
+  <text x="1720" y="70" font-family="Menlo, Consolas, monospace" font-size="20" fill="#a9bdc2">07/08</text>
+  <line x1="78" y1="96" x2="1842" y2="96" stroke="#2e4350" stroke-width="2"/>
+  <text x="78" y="180" font-family="Inter, Helvetica, Arial, sans-serif" font-size="62" font-weight="850" fill="#eff8f7">The guardrail sits below the</text>
+<text x="78" y="244.48000000000002" font-family="Inter, Helvetica, Arial, sans-serif" font-size="62" font-weight="850" fill="#eff8f7">planner.</text>
+  
+  
+      <g transform="translate(96 454)">
+        
+  <g>
+    <rect x="0" y="0" width="356" height="150" rx="18" fill="#111b23" stroke="#45d4c8" stroke-width="2" filter="url(#shadow)"/>
+    <text x="26" y="54" font-family="Inter, Helvetica, Arial, sans-serif" font-size="31" font-weight="850" fill="#45d4c8">Seal</text>
+    <text x="26" y="94" font-family="Inter, Helvetica, Arial, sans-serif" font-size="21" font-weight="500" fill="#eff8f7">hash evidence root before</text>
+<text x="26" y="118.36" font-family="Inter, Helvetica, Arial, sans-serif" font-size="21" font-weight="500" fill="#eff8f7">parsing</text>
+  </g>
+        <path d="M 372 75 L 444 75" stroke="#a9bdc2" stroke-width="5"/><polygon points="444,75 420,60 420,90" fill="#a9bdc2"/>
+        
+  <g>
+    <rect x="474" y="0" width="356" height="150" rx="18" fill="#111b23" stroke="#f2b760" stroke-width="2" filter="url(#shadow)"/>
+    <text x="500" y="54" font-family="Inter, Helvetica, Arial, sans-serif" font-size="31" font-weight="850" fill="#f2b760">Tools</text>
+    <text x="500" y="94" font-family="Inter, Helvetica, Arial, sans-serif" font-size="21" font-weight="500" fill="#eff8f7">read-only parsers return</text>
+<text x="500" y="118.36" font-family="Inter, Helvetica, Arial, sans-serif" font-size="21" font-weight="500" fill="#eff8f7">EvidenceRef</text>
+  </g>
+        <path d="M 846 75 L 918 75" stroke="#a9bdc2" stroke-width="5"/><polygon points="918,75 894,60 894,90" fill="#a9bdc2"/>
+        
+  <g>
+    <rect x="948" y="0" width="356" height="150" rx="18" fill="#111b23" stroke="#75d38a" stroke-width="2" filter="url(#shadow)"/>
+    <text x="974" y="54" font-family="Inter, Helvetica, Arial, sans-serif" font-size="31" font-weight="850" fill="#75d38a">Verify</text>
+    <text x="974" y="94" font-family="Inter, Helvetica, Arial, sans-serif" font-size="21" font-weight="500" fill="#eff8f7">policy controls claim</text>
+<text x="974" y="118.36" font-family="Inter, Helvetica, Arial, sans-serif" font-size="21" font-weight="500" fill="#eff8f7">state</text>
+  </g>
+        <path d="M 1320 75 L 1392 75" stroke="#a9bdc2" stroke-width="5"/><polygon points="1392,75 1368,60 1368,90" fill="#a9bdc2"/>
+        
+  <g>
+    <rect x="1422" y="0" width="356" height="150" rx="18" fill="#111b23" stroke="#45d4c8" stroke-width="2" filter="url(#shadow)"/>
+    <text x="1448" y="54" font-family="Inter, Helvetica, Arial, sans-serif" font-size="31" font-weight="850" fill="#45d4c8">Receipts</text>
+    <text x="1448" y="94" font-family="Inter, Helvetica, Arial, sans-serif" font-size="21" font-weight="500" fill="#eff8f7">replayable proof for</text>
+<text x="1448" y="118.36" font-family="Inter, Helvetica, Arial, sans-serif" font-size="21" font-weight="500" fill="#eff8f7">findings</text>
+  </g>
+      </g>
+      <rect x="270" y="714" width="1372" height="160" rx="18" fill="#111b23" stroke="#2e4350" stroke-width="2" filter="url(#shadow)"/>
+      <text x="318" y="780" font-family="Menlo, Consolas, monospace" font-size="27" fill="#45d4c8">MCP-style schema excludes execute_shell_cmd</text>
+      <text x="318" y="832" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" fill="#eff8f7">The LLM planner can change. The evidence contract stays deterministic.</text>
+  
+  <g>
+    <rect x="78" y="938" width="1764" height="100" rx="16" fill="#050c12" opacity="0.78" stroke="#2e4350" stroke-width="2"/>
+    <text x="112" y="982" font-family="Inter, Helvetica, Arial, sans-serif" font-size="27" font-weight="750" fill="#eff8f7">The planner can change. The verifier contract stays</text>
+<text x="112" y="1012.24" font-family="Inter, Helvetica, Arial, sans-serif" font-size="27" font-weight="750" fill="#eff8f7">deterministic.</text>
+  </g>
+</svg>

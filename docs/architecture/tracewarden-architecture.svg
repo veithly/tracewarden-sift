@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 680" role="img" aria-label="TraceWarden SIFT architecture diagram">
+  <rect width="1180" height="680" fill="#0a0d11"/>
+  <style>
+    text { font-family: Menlo, Consolas, monospace; fill:#e2e8f0; font-size:18px; }
+    .muted { fill:#94a3b8; font-size:14px; }
+    .box { fill:#14191f; stroke:#475569; stroke-width:2; rx:10; }
+    .safe { stroke:#32d583; }
+    .warn { stroke:#f4c430; }
+    .bad { stroke:#ff5c5c; }
+  </style>
+  <text x="50" y="54" font-size="32" font-weight="700">TraceWarden SIFT Trust Boundary</text>
+  <rect class="box safe" x="50" y="100" width="240" height="130"/>
+  <text x="76" y="142">Sealed evidence root</text>
+  <text class="muted" x="76" y="176">hash manifest</text>
+  <text class="muted" x="76" y="202">read-only files</text>
+  <rect class="box safe" x="360" y="100" width="260" height="130"/>
+  <text x="386" y="142">Typed MCP-style tools</text>
+  <text class="muted" x="386" y="176">read_timeline()</text>
+  <text class="muted" x="386" y="202">no raw shell exposed</text>
+  <rect class="box warn" x="700" y="100" width="210" height="130"/>
+  <text x="726" y="142">Planner loop</text>
+  <text class="muted" x="726" y="176">propose claims</text>
+  <text class="muted" x="726" y="202">reroute on gaps</text>
+  <rect class="box safe" x="700" y="300" width="270" height="140"/>
+  <text x="726" y="342">Claim verifier</text>
+  <text class="muted" x="726" y="376">cross-source support</text>
+  <text class="muted" x="726" y="402">revoke unsupported leads</text>
+  <rect class="box safe" x="360" y="300" width="260" height="140"/>
+  <text x="386" y="342">Accuracy harness</text>
+  <text class="muted" x="386" y="376">ground_truth.json</text>
+  <text class="muted" x="386" y="402">TP / FP / FN / hallucination</text>
+  <rect class="box safe" x="50" y="500" width="920" height="120"/>
+  <text x="76" y="542">Output pipeline</text>
+  <text class="muted" x="76" y="576">claim_receipts.json  execution_log.jsonl  accuracy_report.md  incident_report.html</text>
+  <path d="M290 165h70" stroke="#32d583" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M620 165h80" stroke="#f4c430" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M805 230v70" stroke="#f4c430" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M700 370h-80" stroke="#32d583" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M490 440v60" stroke="#32d583" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M835 440v60" stroke="#32d583" stroke-width="4" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#32d583"/>
+    </marker>
+  </defs>
+</svg>

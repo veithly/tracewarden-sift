@@ -1,0 +1,18 @@
+{
+  "current_gate": "G7_SUBMISSION_PACK",
+  "last_passed_gate": "G6_PITCH_VIDEO_REPO_SYNC",
+  "status": "READY_FOR_HUMAN_SUBMIT",
+  "blocked": false,
+  "blocked_gate": null,
+  "reports": {
+    "gpt_pro_doctor": "ok",
+    "devpost_reviewed": true,
+    "g1_idea_tournament": "pass",
+    "g2_prd": "pass",
+    "g3_visual": "pass",
+    "g4_product_loop": "pass",
+    "g5_local_smoke": "pass",
+    "g6_pitch_video_repo_sync": "pass",
+    "g7_submission_pack": "ready"
+  }
+}

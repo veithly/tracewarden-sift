@@ -1,0 +1,13 @@
+{
+  "confirmed": 16,
+  "f1": 1.0,
+  "false_negative_ids": [],
+  "false_negatives": 0,
+  "false_positive_ids": [],
+  "hallucinated_claim_ids": [],
+  "precision": 1.0,
+  "recall": 1.0,
+  "revoked": 1,
+  "total_claims": 17,
+  "true_positives": 16
+}

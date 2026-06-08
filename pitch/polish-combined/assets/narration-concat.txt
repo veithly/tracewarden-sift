@@ -1,0 +1,8 @@
+file '/Users/rick/Documents/Project/Hackathon/FindEvil/pitch/polish-combined/assets/01-cold-open.padded.wav'
+file '/Users/rick/Documents/Project/Hackathon/FindEvil/pitch/polish-combined/assets/02-risk.padded.wav'
+file '/Users/rick/Documents/Project/Hackathon/FindEvil/pitch/polish-combined/assets/03-terminal-run.padded.wav'
+file '/Users/rick/Documents/Project/Hackathon/FindEvil/pitch/polish-combined/assets/04-correction.padded.wav'
+file '/Users/rick/Documents/Project/Hackathon/FindEvil/pitch/polish-combined/assets/05-receipts.padded.wav'
+file '/Users/rick/Documents/Project/Hackathon/FindEvil/pitch/polish-combined/assets/06-accuracy.padded.wav'
+file '/Users/rick/Documents/Project/Hackathon/FindEvil/pitch/polish-combined/assets/07-architecture.padded.wav'
+file '/Users/rick/Documents/Project/Hackathon/FindEvil/pitch/polish-combined/assets/08-close.padded.wav'

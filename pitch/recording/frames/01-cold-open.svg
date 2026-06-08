@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  
+  <defs>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <pattern id="grid" width="52" height="52" patternUnits="userSpaceOnUse">
+      <path d="M 52 0 L 0 0 0 52" fill="none" stroke="#1c313a" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="#081016"/>
+  <rect width="1920" height="1080" fill="url(#grid)" opacity="0.30"/>
+  <circle cx="1560" cy="150" r="390" fill="#45d4c8" opacity="0.10"/>
+  <circle cx="120" cy="1040" r="420" fill="#f2b760" opacity="0.07"/>
+  <text x="78" y="70" font-family="Menlo, Consolas, monospace" font-size="20" fill="#45d4c8" letter-spacing="2">TRACEWARDEN SIFT</text>
+  <text x="1720" y="70" font-family="Menlo, Consolas, monospace" font-size="20" fill="#a9bdc2">01/08</text>
+  <line x1="78" y1="96" x2="1842" y2="96" stroke="#2e4350" stroke-width="2"/>
+  <text x="78" y="180" font-family="Inter, Helvetica, Arial, sans-serif" font-size="62" font-weight="850" fill="#eff8f7">Prove 17 DFIR claims in 90</text>
+<text x="78" y="244.48000000000002" font-family="Inter, Helvetica, Arial, sans-serif" font-size="62" font-weight="850" fill="#eff8f7">seconds.</text>
+  
+  
+      <rect x="82" y="390" width="790" height="420" rx="18" fill="#071015" stroke="#2e4350" stroke-width="2" filter="url(#shadow)"/>
+      <rect x="82" y="390" width="790" height="54" rx="18" fill="#15242b"/>
+      <circle cx="116" cy="418" r="8" fill="#ff6a66"/><circle cx="144" cy="418" r="8" fill="#f2b760"/><circle cx="172" cy="418" r="8" fill="#75d38a"/>
+      <text x="124" y="500" font-family="Menlo, Consolas, monospace" font-size="22" fill="#eff8f7">$ PYTHONPATH=src python3 -m tracewarden run examples/evidence/case-alpha --out runs/demo</text>
+<text x="124" y="537" font-family="Menlo, Consolas, monospace" font-size="22" fill="#45d4c8">[seal] evidence root locked</text>
+<text x="124" y="574" font-family="Menlo, Consolas, monospace" font-size="22" fill="#a9bdc2">[plan] collect timeline, auth, powershell, registry, network evidence</text>
+<text x="124" y="611" font-family="Menlo, Consolas, monospace" font-size="22" fill="#45d4c8">[tool] typed read-only parsers completed</text>
+<text x="124" y="648" font-family="Menlo, Consolas, monospace" font-size="22" fill="#f2b760">[verify] claims evaluated: 17</text>
+<text x="124" y="685" font-family="Menlo, Consolas, monospace" font-size="22" fill="#ff6a66">[correct] CLAIM-004 revoked; rerouted into powershell + network evidence</text>
+<text x="124" y="722" font-family="Menlo, Consolas, monospace" font-size="22" fill="#75d38a">[write] claim receipts: runs/demo/claim_receipts.json</text>
+      <g transform="translate(1030 350) rotate(-3)">
+        
+  <g>
+    <rect x="0" y="0" width="560" height="138" rx="18" fill="#111b23" stroke="#ff6a66" stroke-width="2" filter="url(#shadow)"/>
+    <text x="30" y="48" font-family="Menlo, Consolas, monospace" font-size="26" font-weight="800" fill="#ff6a66">CLAIM-004 · REVOKED</text>
+    <text x="30" y="92" font-family="Inter, Helvetica, Arial, sans-serif" font-size="23" fill="#eff8f7">weak updater lead stopped</text>
+  </g>
+        
+  <g>
+    <rect x="42" y="166" width="560" height="138" rx="18" fill="#111b23" stroke="#75d38a" stroke-width="2" filter="url(#shadow)"/>
+    <text x="72" y="214" font-family="Menlo, Consolas, monospace" font-size="26" font-weight="800" fill="#75d38a">CLAIM-009 · CONFIRMED</text>
+    <text x="72" y="258" font-family="Inter, Helvetica, Arial, sans-serif" font-size="23" fill="#eff8f7">PowerShell + network support</text>
+  </g>
+        
+  <g>
+    <rect x="84" y="332" width="560" height="138" rx="18" fill="#111b23" stroke="#45d4c8" stroke-width="2" filter="url(#shadow)"/>
+    <text x="114" y="380" font-family="Menlo, Consolas, monospace" font-size="26" font-weight="800" fill="#45d4c8">REPORTS · WRITTEN</text>
+    <text x="114" y="424" font-family="Inter, Helvetica, Arial, sans-serif" font-size="23" fill="#eff8f7">receipts, accuracy, incident HTML</text>
+  </g>
+      </g>
+  
+  <g>
+    <rect x="78" y="938" width="1764" height="100" rx="16" fill="#050c12" opacity="0.78" stroke="#2e4350" stroke-width="2"/>
+    <text x="112" y="982" font-family="Inter, Helvetica, Arial, sans-serif" font-size="27" font-weight="750" fill="#eff8f7">Every finding needs a receipt before it survives.</text>
+  </g>
+</svg>

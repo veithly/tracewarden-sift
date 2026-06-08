@@ -1,0 +1,33 @@
+{
+  "case_id": "case-alpha",
+  "positive_claim_ids": [
+    "CLAIM-009",
+    "CLAIM-010",
+    "CLAIM-011",
+    "CLAIM-012",
+    "CLAIM-013",
+    "CLAIM-014",
+    "CLAIM-015",
+    "CLAIM-016",
+    "CLAIM-017",
+    "CLAIM-018",
+    "CLAIM-019",
+    "CLAIM-020",
+    "CLAIM-021",
+    "CLAIM-022",
+    "CLAIM-023",
+    "CLAIM-024"
+  ],
+  "benign_or_revoked_claim_ids": [
+    "CLAIM-004"
+  ],
+  "expected_findings": [
+    "encoded powershell download",
+    "credential dump",
+    "run key persistence",
+    "archive staging",
+    "exfiltration to 203.0.113.77",
+    "privileged svc_backup network logon"
+  ],
+  "notes": "Synthetic case. CLAIM-004 is deliberately plausible but wrong: updater.exe is signed and only contacts a known vendor endpoint."
+}

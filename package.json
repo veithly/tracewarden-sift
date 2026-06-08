@@ -1,0 +1,16 @@
+{
+  "name": "tracewarden-sift",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "mockups": "node scripts/render_mockups.mjs",
+    "test": "PYTHONPATH=src python3 -m unittest discover -s tests -v",
+    "demo": "PYTHONPATH=src python3 -m tracewarden run examples/evidence/case-alpha --out runs/demo"
+  },
+  "dependencies": {
+    "@xterm/xterm": "latest",
+    "monaco-editor": "latest",
+    "recharts": "latest"
+  },
+  "devDependencies": {}
+}

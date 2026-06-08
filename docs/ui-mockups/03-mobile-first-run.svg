@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+<rect width="100%" height="100%" fill="#0a0d11"/>
+<text x="22" y="42" fill="#e2e8f0" font-family="Menlo, Consolas, monospace" font-size="22" font-weight="700">TraceWarden</text>
+<text x="22" y="70" fill="#5ce1e6" font-family="Menlo, Consolas, monospace" font-size="16" font-weight="700">Receipt CLAIM-004</text>
+<rect x="18" y="92" width="354" height="668" rx="10" fill="#14191f" stroke="#475569" stroke-width="2"/>
+<text x="38" y="132" fill="#94a3b8" font-family="Menlo, Consolas, monospace" font-size="14" font-weight="500">Status</text>
+<text x="38" y="160" fill="#ff5c5c" font-family="Menlo, Consolas, monospace" font-size="24" font-weight="700">REVOKED</text>
+<text x="38" y="214" fill="#94a3b8" font-family="Menlo, Consolas, monospace" font-size="14" font-weight="500">Verifier note</text>
+<text x="38" y="242" fill="#e2e8f0" font-family="Menlo, Consolas, monospace" font-size="16" font-weight="500">No cross-source support.</text>
+<text x="38" y="268" fill="#e2e8f0" font-family="Menlo, Consolas, monospace" font-size="16" font-weight="500">Benign updater path found.</text>
+<text x="38" y="324" fill="#94a3b8" font-family="Menlo, Consolas, monospace" font-size="14" font-weight="500">Evidence</text>
+<text x="38" y="352" fill="#5ce1e6" font-family="Menlo, Consolas, monospace" font-size="16" font-weight="500">timeline.csv:44</text>
+<text x="38" y="380" fill="#e2e8f0" font-family="Menlo, Consolas, monospace" font-size="16" font-weight="500">sha256:91af...</text>
+<text x="38" y="408" fill="#e2e8f0" font-family="Menlo, Consolas, monospace" font-size="16" font-weight="500">tool_call: TOOL-003</text>
+<rect x="38" y="456" width="314" height="154" rx="10" fill="#0c1116" stroke="#475569" stroke-width="2"/>
+<text x="58" y="494" fill="#94a3b8" font-family="Menlo, Consolas, monospace" font-size="14" font-weight="500">Next confirmed lead</text>
+<text x="58" y="526" fill="#32d583" font-family="Menlo, Consolas, monospace" font-size="16" font-weight="700">CLAIM-009 credential dump</text>
+<text x="58" y="554" fill="#5ce1e6" font-family="Menlo, Consolas, monospace" font-size="16" font-weight="500">powershell.log:88</text>
+<text x="38" y="700" fill="#5ce1e6" font-family="Menlo, Consolas, monospace" font-size="14" font-weight="500">Accuracy  F1 0.89   Hallucinations 0</text>
+<rect x="18" y="780" width="354" height="44" rx="10" fill="#14191f" stroke="#475569" stroke-width="2"/>
+<text x="38" y="808" fill="#e2e8f0" font-family="Menlo, Consolas, monospace" font-size="14" font-weight="500">Receipts     Accuracy     Architecture</text>
+</svg>

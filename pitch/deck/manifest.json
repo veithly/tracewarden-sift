@@ -1,0 +1,21 @@
+{
+  "title": "TraceWarden SIFT",
+  "hero": "Prove 17 DFIR claims in 90 seconds.",
+  "slide_count": 5,
+  "previews": [
+    "pitch/deck/previews/slide-01.png",
+    "pitch/deck/previews/slide-02.png",
+    "pitch/deck/previews/slide-03.png",
+    "pitch/deck/previews/slide-04.png",
+    "pitch/deck/previews/slide-05.png"
+  ],
+  "thumbs": [
+    "pitch/deck-thumbs/slide-01.png",
+    "pitch/deck-thumbs/slide-02.png",
+    "pitch/deck-thumbs/slide-03.png",
+    "pitch/deck-thumbs/slide-04.png",
+    "pitch/deck-thumbs/slide-05.png"
+  ],
+  "pdf": "pitch/deck/tracewarden-sift-deck.pdf",
+  "generated_from": "scripts/build_deck_assets.mjs"
+}

@@ -1,0 +1,23 @@
+{
+  "hero_path": {
+    "command": "PYTHONPATH=src python3 -m tracewarden run examples/evidence/case-alpha --out runs/demo",
+    "expected": [
+      "17 claims evaluated",
+      "CLAIM-004 revoked",
+      "claim_receipts.json",
+      "accuracy_report.md",
+      "incident_report.html"
+    ],
+    "status": "verified-local"
+  },
+  "guardrails": {
+    "tests": ["test_guardrail_blocks_path_escape", "test_mcp_schema_exposes_only_readonly_tools"],
+    "status": "planned-for-ci"
+  },
+  "accuracy": {
+    "expected_precision": 1.0,
+    "expected_recall": 1.0,
+    "expected_hallucinations": 0,
+    "status": "verified-local"
+  }
+}

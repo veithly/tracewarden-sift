@@ -1,0 +1,42 @@
+[
+  {
+    "id": "01-cold-open",
+    "atMs": 0,
+    "durationMs": 7786
+  },
+  {
+    "id": "02-risk",
+    "atMs": 7786,
+    "durationMs": 9559
+  },
+  {
+    "id": "03-terminal-run",
+    "atMs": 17345,
+    "durationMs": 10034
+  },
+  {
+    "id": "04-correction",
+    "atMs": 27378,
+    "durationMs": 10571
+  },
+  {
+    "id": "05-receipts",
+    "atMs": 37949,
+    "durationMs": 11768
+  },
+  {
+    "id": "06-accuracy",
+    "atMs": 49717,
+    "durationMs": 10979
+  },
+  {
+    "id": "07-architecture",
+    "atMs": 60696,
+    "durationMs": 10851
+  },
+  {
+    "id": "08-close",
+    "atMs": 71547,
+    "durationMs": 9849
+  }
+]

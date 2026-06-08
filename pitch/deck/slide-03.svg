@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  
+  <defs>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#000000" flood-opacity="0.28"/>
+    </filter>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#1d3038" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="#081016"/>
+  <rect width="1920" height="1080" fill="url(#grid)" opacity="0.34"/>
+  <circle cx="1580" cy="118" r="370" fill="#45d4c8" opacity="0.09"/>
+  <circle cx="180" cy="1010" r="420" fill="#f2b760" opacity="0.07"/>
+  <text x="84" y="78" font-family="Menlo, Consolas, monospace" font-size="21" fill="#45d4c8" letter-spacing="2">LIVE DEMO</text>
+  <text x="1708" y="78" font-family="Menlo, Consolas, monospace" font-size="20" fill="#a8bbc0">03/05</text>
+  <line x1="84" y1="104" x2="1836" y2="104" stroke="#2e4350" stroke-width="2"/>
+  
+  <text x="92" y="206" font-family="Inter, Helvetica, Arial, sans-serif" font-size="68" font-weight="850" fill="#eef6f6">CLAIM-004 gets revoked on</text>
+<text x="92" y="277.4" font-family="Inter, Helvetica, Arial, sans-serif" font-size="68" font-weight="850" fill="#eef6f6">screen.</text>
+  <text x="96" y="396" font-family="Inter, Helvetica, Arial, sans-serif" font-size="31" font-weight="500" fill="#a8bbc0">The agent reroutes from a weak updater lead into</text>
+<text x="96" y="432.58" font-family="Inter, Helvetica, Arial, sans-serif" font-size="31" font-weight="500" fill="#a8bbc0">PowerShell and network evidence.</text>
+  
+      <g filter="url(#softShadow)">
+        <rect x="120" y="338" width="1220" height="520" rx="18" fill="#071015" stroke="#2e4350" stroke-width="2"/>
+        <rect x="120" y="338" width="1220" height="54" rx="18" fill="#15242b"/>
+        <text x="158" y="374" font-family="Menlo, Consolas, monospace" font-size="22" fill="#a8bbc0">tracewarden terminal run</text>
+        <text x="166" y="476" font-family="Menlo, Consolas, monospace" font-size="24" fill="#a8bbc0">$ PYTHONPATH=src python3 -m tracewarden run examples/evidence/case-alpha --out runs/demo</text>
+<text x="166" y="518" font-family="Menlo, Consolas, monospace" font-size="24" fill="#45d4c8">[seal] evidence root locked · 5 artifacts · manifest hash written</text>
+<text x="166" y="560" font-family="Menlo, Consolas, monospace" font-size="24" fill="#a8bbc0">[plan] parse timeline, auth, PowerShell, registry, network</text>
+<text x="166" y="602" font-family="Menlo, Consolas, monospace" font-size="24" fill="#a8bbc0">[tool] read_powershell_log -&gt; 5 evidence refs</text>
+<text x="166" y="644" font-family="Menlo, Consolas, monospace" font-size="24" fill="#f2b760">[verify] CLAIM-004 lacks cross-source support</text>
+<text x="166" y="686" font-family="Menlo, Consolas, monospace" font-size="24" fill="#ff6a66">[correct] CLAIM-004 revoked; rerouting into PowerShell + network</text>
+<text x="166" y="728" font-family="Menlo, Consolas, monospace" font-size="24" fill="#75d38a">[write] claim_receipts.json · accuracy_report.md · incident_report.html</text>
+      </g>
+      <g>
+        <path d="M 1420 492 C 1508 492, 1508 570, 1602 570" fill="none" stroke="#45d4c8" stroke-width="5"/>
+        <polygon points="1602,570 1574,554 1574,586" fill="#45d4c8"/>
+        
+    <g filter="url(#softShadow)">
+      <rect x="1350" y="640" width="520" height="128" rx="14" fill="#111b23" stroke="#ff6a66" stroke-width="2"/>
+      <text x="1378" y="683" font-family="Menlo, Consolas, monospace" font-size="25" font-weight="700" fill="#ff6a66">CLAIM-004 · REVOKED</text>
+      <text x="1378" y="724" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" fill="#eef6f6">the demo's self-correction</text>
+    </g>
+      </g>
+  
+        <g>
+          <rect x="112" y="796" width="30" height="30" rx="8" fill="#45d4c8" opacity="0.92"/>
+          <text x="164" y="822" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" fill="#eef6f6">Run one terminal command</text>
+        </g>
+
+        <g>
+          <rect x="112" y="850" width="30" height="30" rx="8" fill="#f2b760" opacity="0.92"/>
+          <text x="164" y="876" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" fill="#eef6f6">Watch plan -&gt; tool -&gt; verify -&gt; correct</text>
+        </g>
+
+        <g>
+          <rect x="112" y="904" width="30" height="30" rx="8" fill="#45d4c8" opacity="0.92"/>
+          <text x="164" y="930" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" fill="#eef6f6">Open receipts and accuracy report</text>
+        </g>
+  <text x="92" y="1018" font-family="Menlo, Consolas, monospace" font-size="20" fill="#a8bbc0">TraceWarden SIFT · FIND EVIL! · reproducible local package</text>
+</svg>

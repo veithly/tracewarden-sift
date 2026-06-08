@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TraceWarden SIFT Incident Report</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0a0d11; --panel:#14191f; --line:#475569; --text:#e2e8f0; --muted:#94a3b8; --green:#32d583; --red:#ff5c5c; --amber:#f4c430; --cyan:#5ce1e6; }
+    body { margin:0; background:var(--bg); color:var(--text); font:14px/1.45 Menlo, Consolas, monospace; }
+    main { max-width:1180px; margin:0 auto; padding:32px 20px 56px; }
+    header { border:1px solid var(--line); border-radius:8px; background:var(--panel); padding:22px; }
+    h1 { margin:0 0 8px; font-size:30px; }
+    h2 { margin-top:34px; color:var(--cyan); }
+    .hero { color:var(--cyan); font-size:18px; }
+    .metrics { display:grid; grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); gap:10px; margin:20px 0; }
+    .metric { border:1px solid var(--line); border-radius:8px; padding:12px; background:#101419; }
+    .metric b { display:block; color:var(--cyan); font-size:22px; }
+    table { width:100%; border-collapse:collapse; border:1px solid var(--line); background:var(--panel); }
+    th,td { border-bottom:1px solid #263241; padding:10px; vertical-align:top; text-align:left; }
+    th { color:var(--cyan); }
+    code { color:var(--cyan); }
+    .status { display:inline-block; min-width:88px; text-align:center; padding:3px 7px; border:1px solid currentColor; border-radius:999px; }
+    .confirmed { color:var(--green); }
+    .revoked { color:var(--red); }
+    .challenged,.proposed { color:var(--amber); }
+    @media (max-width: 760px) { body { font-size:12px; } table { display:block; overflow-x:auto; } h1 { font-size:22px; } }
+  </style>
+</head>
+<body>
+<main data-visual-lane="operational-dashboard terminal" data-hero-composition="terminal evidence bench">
+  <header>
+    <h1>TraceWarden SIFT Incident Report</h1>
+    <div class="hero">Prove 17 DFIR claims in 90 seconds.</div>
+    <p>Session: <code>local-analyst</code>. Every confirmed finding below has a replayable receipt.</p>
+  </header>
+  <section class="metrics">
+    <div class="metric"><b>17</b>claims</div>
+    <div class="metric"><b>16</b>confirmed</div>
+    <div class="metric"><b>1</b>revoked</div>
+    <div class="metric"><b>1.0</b>F1</div>
+    <div class="metric"><b>0</b>hallucinations</div>
+  </section>
+  <h2>Claim Receipts</h2>
+  <table><thead><tr><th>Claim</th><th>Status</th><th>Finding</th><th>Evidence</th><th>Verifier</th></tr></thead><tbody><tr id='claim-claim-004'><td><code>CLAIM-004</code></td><td><span class='status revoked'>revoked</span></td><td>Signed updater execution looked suspicious but lacked corroboration</td><td>timeline.csv:3 <code>47f0f26be57a</code> timeline</td><td>Revoked: updater.exe has a signed vendor path and no suspicious network/process corroboration.</td></tr><tr id='claim-claim-010'><td><code>CLAIM-010</code></td><td><span class='status confirmed'>confirmed</span></td><td>Alice received elevated privileges before suspicious script activity</td><td>auth.log:2 <code>52f306ecae8c</code> auth<br>timeline.csv:4 <code>47f0f26be57a</code> timeline</td><td>Confirmed: evidence is cross-supported by independent artifact parsers.</td></tr><tr id='claim-claim-009'><td><code>CLAIM-009</code></td><td><span class='status confirmed'>confirmed</span></td><td>PowerShell downloaded attacker script from 203.0.113.77</td><td>powershell.log:2 <code>618bf98df896</code> powershell<br>network.log:1 <code>cd46f7acdbb7</code> network</td><td>Confirmed: evidence is cross-supported by independent artifact parsers.</td></tr><tr id='claim-claim-011'><td><code>CLAIM-011</code></td><td><span class='status confirmed'>confirmed</span></td><td>PowerShell invoked credential dump behavior</td><td>powershell.log:2 <code>618bf98df896</code> powershell<br>auth.log:4 <code>52f306ecae8c</code> auth</td><td>Confirmed: evidence is cross-supported by independent artifact parsers.</td></tr><tr id='claim-claim-012'><td><code>CLAIM-012</code></td><td><span class='status confirmed'>confirmed</span></td><td>ProgramData archive staging occurred before exfiltration</td><td>powershell.log:3 <code>618bf98df896</code> powershell<br>network.log:2 <code>cd46f7acdbb7</code> network</td><td>Confirmed: evidence is cross-supported by independent artifact parsers.</td></tr><tr id='claim-claim-013'><td><code>CLAIM-013</code></td><td><span class='status confirmed'>confirmed</span></td><td>Run key persistence was written for AcmeUpdater</td><td>registry.log:1 <code>f7aba4357b97</code> registry<br>powershell.log:2 <code>618bf98df896</code> powershell</td><td>Confirmed: evidence is cross-supported by independent artifact parsers.</td></tr><tr id='claim-claim-014'><td><code>CLAIM-014</code></td><td><span class='status confirmed'>confirmed</span></td><td>svc_backup network logon followed Alice privilege escalation</td><td>auth.log:3 <code>52f306ecae8c</code> auth<br>auth.log:4 <code>52f306ecae8c</code> auth</td><td>Confirmed: high-severity evidence passed the deterministic verifier policy.</td></tr><tr id='claim-claim-015'><td><code>CLAIM-015</code></td><td><span class='status confirmed'>confirmed</span></td><td>Exfiltration connection sent staged data to 203.0.113.77</td><td>network.log:2 <code>cd46f7acdbb7</code> network<br>powershell.log:3 <code>618bf98df896</code> powershell</td><td>Confirmed: evidence is cross-supported by independent artifact parsers.</td></tr><tr id='claim-claim-016'><td><code>CLAIM-016</code></td><td><span class='status confirmed'>confirmed</span></td><td>Known vendor updater traffic is benign corroboration for revocation</td><td>network.log:3 <code>cd46f7acdbb7</code> network<br>registry.log:2 <code>f7aba4357b97</code> registry</td><td>Confirmed: evidence is cross-supported by independent artifact parsers.</td></tr><tr id='claim-claim-017'><td><code>CLAIM-017</code></td><td><span class='status confirmed'>confirmed</span></td><td>Intrusion chain spans download, credential access, persistence, and exfiltration</td><td>powershell.log:2 <code>618bf98df896</code> powershell<br>powershell.log:2 <code>618bf98df896</code> powershell<br>registry.log:1 <code>f7aba4357b97</code> registry<br>network.log:2 <code>cd46f7acdbb7</code> network</td><td>Confirmed: evidence is cross-supported by independent artifact parsers.</td></tr><tr id='claim-claim-018'><td><code>CLAIM-018</code></td><td><span class='status confirmed'>confirmed</span></td><td>Evidence integrity manifest sealed all source files before analysis</td><td>powershell.log:2 <code>618bf98df896</code> powershell<br>network.log:2 <code>cd46f7acdbb7</code> network</td><td>Confirmed: evidence is cross-supported by independent artifact parsers.</td></tr><tr id='claim-claim-019'><td><code>CLAIM-019</code></td><td><span class='status confirmed'>confirmed</span></td><td>Agent self-correction prevented updater false positive</td><td>network.log:3 <code>cd46f7acdbb7</code> network<br>powershell.log:2 <code>618bf98df896</code> powershell</td><td>Confirmed: evidence is cross-supported by independent artifact parsers.</td></tr><tr id='claim-claim-020'><td><code>CLAIM-020</code></td><td><span class='status confirmed'>confirmed</span></td><td>Case requires containment of ACME-WS-014 and svc_backup review</td><td>auth.log:3 <code>52f306ecae8c</code> auth<br>network.log:2 <code>cd46f7acdbb7</code> network</td><td>Confirmed: evidence is cross-supported by independent artifact parsers.</td></tr><tr id='claim-claim-021'><td><code>CLAIM-021</code></td><td><span class='status confirmed'>confirmed</span></td><td>Attacker host served payload and received upload</td><td>network.log:1 <code>cd46f7acdbb7</code> network<br>network.log:2 <code>cd46f7acdbb7</code> network</td><td>Confirmed: high-severity evidence passed the deterministic verifier policy.</td></tr><tr id='claim-claim-022'><td><code>CLAIM-022</code></td><td><span class='status confirmed'>confirmed</span></td><td>Persistence script points back to downloaded check.ps1</td><td>registry.log:1 <code>f7aba4357b97</code> registry<br>powershell.log:2 <code>618bf98df896</code> powershell</td><td>Confirmed: evidence is cross-supported by independent artifact parsers.</td></tr><tr id='claim-claim-023'><td><code>CLAIM-023</code></td><td><span class='status confirmed'>confirmed</span></td><td>Archive staging followed credential dump activity</td><td>powershell.log:2 <code>618bf98df896</code> powershell<br>powershell.log:3 <code>618bf98df896</code> powershell</td><td>Confirmed: high-severity evidence passed the deterministic verifier policy.</td></tr><tr id='claim-claim-024'><td><code>CLAIM-024</code></td><td><span class='status confirmed'>confirmed</span></td><td>Network exfiltration volume exceeded normal updater traffic</td><td>network.log:2 <code>cd46f7acdbb7</code> network<br>network.log:3 <code>cd46f7acdbb7</code> network</td><td>Confirmed: high-severity evidence passed the deterministic verifier policy.</td></tr></tbody></table>
+  <h2>Tool Calls</h2>
+  <table><thead><tr><th>ID</th><th>Tool</th><th>Status</th><th>Detail</th><th>Refs</th></tr></thead><tbody><tr><td><code>TOOL-001</code></td><td>read_timeline</td><td>ok</td><td>timeline.csv</td><td>7</td></tr><tr><td><code>TOOL-002</code></td><td>read_auth</td><td>ok</td><td>auth.log</td><td>4</td></tr><tr><td><code>TOOL-003</code></td><td>read_powershell</td><td>ok</td><td>powershell.log</td><td>3</td></tr><tr><td><code>TOOL-004</code></td><td>read_registry</td><td>ok</td><td>registry.log</td><td>2</td></tr><tr><td><code>TOOL-005</code></td><td>read_network</td><td>ok</td><td>network.log</td><td>3</td></tr><tr><td><code>TOOL-006</code></td><td>read_ground_truth</td><td>ok</td><td>ground_truth.json</td><td>1</td></tr></tbody></table>
+</main>
+</body>
+</html>

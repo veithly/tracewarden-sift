@@ -1,0 +1,44 @@
+[
+  {
+    "detail": "timeline.csv",
+    "evidence_count": 7,
+    "id": "TOOL-001",
+    "name": "read_timeline",
+    "status": "ok"
+  },
+  {
+    "detail": "auth.log",
+    "evidence_count": 4,
+    "id": "TOOL-002",
+    "name": "read_auth",
+    "status": "ok"
+  },
+  {
+    "detail": "powershell.log",
+    "evidence_count": 3,
+    "id": "TOOL-003",
+    "name": "read_powershell",
+    "status": "ok"
+  },
+  {
+    "detail": "registry.log",
+    "evidence_count": 2,
+    "id": "TOOL-004",
+    "name": "read_registry",
+    "status": "ok"
+  },
+  {
+    "detail": "network.log",
+    "evidence_count": 3,
+    "id": "TOOL-005",
+    "name": "read_network",
+    "status": "ok"
+  },
+  {
+    "detail": "ground_truth.json",
+    "evidence_count": 1,
+    "id": "TOOL-006",
+    "name": "read_ground_truth",
+    "status": "ok"
+  }
+]

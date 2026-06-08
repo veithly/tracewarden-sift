@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  
+  <defs>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#000000" flood-opacity="0.28"/>
+    </filter>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#1d3038" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="#081016"/>
+  <rect width="1920" height="1080" fill="url(#grid)" opacity="0.34"/>
+  <circle cx="1580" cy="118" r="370" fill="#45d4c8" opacity="0.09"/>
+  <circle cx="180" cy="1010" r="420" fill="#f2b760" opacity="0.07"/>
+  <text x="84" y="78" font-family="Menlo, Consolas, monospace" font-size="21" fill="#45d4c8" letter-spacing="2">PROOF</text>
+  <text x="1708" y="78" font-family="Menlo, Consolas, monospace" font-size="20" fill="#a8bbc0">05/05</text>
+  <line x1="84" y1="104" x2="1836" y2="104" stroke="#2e4350" stroke-width="2"/>
+  
+  <text x="92" y="206" font-family="Inter, Helvetica, Arial, sans-serif" font-size="68" font-weight="850" fill="#eef6f6">16 confirmed. 1 revoked. 0</text>
+<text x="92" y="277.4" font-family="Inter, Helvetica, Arial, sans-serif" font-size="68" font-weight="850" fill="#eef6f6">hallucinations.</text>
+  <text x="96" y="396" font-family="Inter, Helvetica, Arial, sans-serif" font-size="31" font-weight="500" fill="#a8bbc0">The package is reproducible from the repo and scored</text>
+<text x="96" y="432.58" font-family="Inter, Helvetica, Arial, sans-serif" font-size="31" font-weight="500" fill="#a8bbc0">against ground truth.</text>
+  
+      <g transform="translate(118 396)">
+        
+    <g>
+      <rect x="0" y="0" width="255" height="140" rx="16" fill="#111b23" stroke="#2e4350" stroke-width="2"/>
+      <text x="28" y="62" font-family="Inter, Helvetica, Arial, sans-serif" font-size="48" font-weight="800" fill="#45d4c8">17</text>
+      <text x="28" y="102" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" fill="#a8bbc0">claims evaluated</text>
+    </g>
+        
+    <g>
+      <rect x="300" y="0" width="255" height="140" rx="16" fill="#111b23" stroke="#2e4350" stroke-width="2"/>
+      <text x="328" y="62" font-family="Inter, Helvetica, Arial, sans-serif" font-size="48" font-weight="800" fill="#75d38a">16</text>
+      <text x="328" y="102" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" fill="#a8bbc0">confirmed</text>
+    </g>
+        
+    <g>
+      <rect x="600" y="0" width="255" height="140" rx="16" fill="#111b23" stroke="#2e4350" stroke-width="2"/>
+      <text x="628" y="62" font-family="Inter, Helvetica, Arial, sans-serif" font-size="48" font-weight="800" fill="#ff6a66">1</text>
+      <text x="628" y="102" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" fill="#a8bbc0">revoked</text>
+    </g>
+        
+    <g>
+      <rect x="900" y="0" width="255" height="140" rx="16" fill="#111b23" stroke="#2e4350" stroke-width="2"/>
+      <text x="928" y="62" font-family="Inter, Helvetica, Arial, sans-serif" font-size="48" font-weight="800" fill="#f2b760">0</text>
+      <text x="928" y="102" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" fill="#a8bbc0">hallucinations</text>
+    </g>
+        
+    <g>
+      <rect x="1200" y="0" width="255" height="140" rx="16" fill="#111b23" stroke="#2e4350" stroke-width="2"/>
+      <text x="1228" y="62" font-family="Inter, Helvetica, Arial, sans-serif" font-size="48" font-weight="800" fill="#75d38a">1.0</text>
+      <text x="1228" y="102" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" fill="#a8bbc0">precision / recall</text>
+    </g>
+      </g>
+      <g filter="url(#softShadow)">
+        <rect x="118" y="626" width="1540" height="180" rx="18" fill="#111b23" stroke="#2e4350" stroke-width="2"/>
+        <text x="158" y="698" font-family="Menlo, Consolas, monospace" font-size="28" fill="#45d4c8">Open: runs/demo/incident_report.html · claim_receipts.json · accuracy_report.md</text>
+        <text x="158" y="756" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" fill="#eef6f6">Ask: inspect the proof chain, then add the next SIFT parser family.</text>
+      </g>
+  
+        <g>
+          <rect x="112" y="796" width="30" height="30" rx="8" fill="#45d4c8" opacity="0.92"/>
+          <text x="164" y="822" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" fill="#eef6f6">17 claims evaluated</text>
+        </g>
+
+        <g>
+          <rect x="112" y="850" width="30" height="30" rx="8" fill="#f2b760" opacity="0.92"/>
+          <text x="164" y="876" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" fill="#eef6f6">precision 1.0, recall 1.0</text>
+        </g>
+
+        <g>
+          <rect x="112" y="904" width="30" height="30" rx="8" fill="#45d4c8" opacity="0.92"/>
+          <text x="164" y="930" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" fill="#eef6f6">path escape blocked in tests</text>
+        </g>
+  <text x="92" y="1018" font-family="Menlo, Consolas, monospace" font-size="20" fill="#a8bbc0">TraceWarden SIFT · FIND EVIL! · reproducible local package</text>
+</svg>

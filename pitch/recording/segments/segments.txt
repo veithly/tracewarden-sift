@@ -1,0 +1,8 @@
+file '/Users/rick/Documents/Project/Hackathon/FindEvil/pitch/recording/segments/01-01-cold-open.mp4'
+file '/Users/rick/Documents/Project/Hackathon/FindEvil/pitch/recording/segments/02-02-risk.mp4'
+file '/Users/rick/Documents/Project/Hackathon/FindEvil/pitch/recording/segments/03-03-terminal-run.mp4'
+file '/Users/rick/Documents/Project/Hackathon/FindEvil/pitch/recording/segments/04-04-correction.mp4'
+file '/Users/rick/Documents/Project/Hackathon/FindEvil/pitch/recording/segments/05-05-receipts.mp4'
+file '/Users/rick/Documents/Project/Hackathon/FindEvil/pitch/recording/segments/06-06-accuracy.mp4'
+file '/Users/rick/Documents/Project/Hackathon/FindEvil/pitch/recording/segments/07-07-architecture.mp4'
+file '/Users/rick/Documents/Project/Hackathon/FindEvil/pitch/recording/segments/08-08-close.mp4'

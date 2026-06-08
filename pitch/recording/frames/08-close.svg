@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  
+  <defs>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <pattern id="grid" width="52" height="52" patternUnits="userSpaceOnUse">
+      <path d="M 52 0 L 0 0 0 52" fill="none" stroke="#1c313a" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="#081016"/>
+  <rect width="1920" height="1080" fill="url(#grid)" opacity="0.30"/>
+  <circle cx="1560" cy="150" r="390" fill="#45d4c8" opacity="0.10"/>
+  <circle cx="120" cy="1040" r="420" fill="#f2b760" opacity="0.07"/>
+  <text x="78" y="70" font-family="Menlo, Consolas, monospace" font-size="20" fill="#45d4c8" letter-spacing="2">SUBMISSION PACKAGE</text>
+  <text x="1720" y="70" font-family="Menlo, Consolas, monospace" font-size="20" fill="#a9bdc2">08/08</text>
+  <line x1="78" y1="96" x2="1842" y2="96" stroke="#2e4350" stroke-width="2"/>
+  <text x="78" y="180" font-family="Inter, Helvetica, Arial, sans-serif" font-size="62" font-weight="850" fill="#eff8f7">Run it, inspect it, extend it.</text>
+  
+  
+    <g transform="translate(122 370)">
+      
+  <g>
+    <rect x="0" y="0" width="560" height="138" rx="18" fill="#111b23" stroke="#45d4c8" stroke-width="2" filter="url(#shadow)"/>
+    <text x="30" y="48" font-family="Menlo, Consolas, monospace" font-size="26" font-weight="800" fill="#45d4c8">PITCH DECK · READY</text>
+    <text x="30" y="92" font-family="Inter, Helvetica, Arial, sans-serif" font-size="23" fill="#eff8f7">pitch/deck/tracewarden-sift-pitch.pptx</text>
+  </g>
+      
+  <g>
+    <rect x="0" y="176" width="560" height="138" rx="18" fill="#111b23" stroke="#75d38a" stroke-width="2" filter="url(#shadow)"/>
+    <text x="30" y="224" font-family="Menlo, Consolas, monospace" font-size="26" font-weight="800" fill="#75d38a">VIDEO · READY</text>
+    <text x="30" y="268" font-family="Inter, Helvetica, Arial, sans-serif" font-size="23" fill="#eff8f7">pitch/recording/pitch-demo-combined-final.mp4</text>
+  </g>
+      
+  <g>
+    <rect x="0" y="352" width="560" height="138" rx="18" fill="#111b23" stroke="#f2b760" stroke-width="2" filter="url(#shadow)"/>
+    <text x="30" y="400" font-family="Menlo, Consolas, monospace" font-size="26" font-weight="800" fill="#f2b760">REPORTS · READY</text>
+    <text x="30" y="444" font-family="Inter, Helvetica, Arial, sans-serif" font-size="23" fill="#eff8f7">runs/demo + artifacts/sample-run</text>
+  </g>
+    </g>
+    <rect x="848" y="410" width="850" height="390" rx="18" fill="#111b23" stroke="#2e4350" stroke-width="2" filter="url(#shadow)"/>
+    <text x="898" y="488" font-family="Inter, Helvetica, Arial, sans-serif" font-size="38" font-weight="850" fill="#eff8f7">Judge path</text>
+    <text x="898" y="570" font-family="Inter, Helvetica, Arial, sans-serif" font-size="30" font-weight="550" fill="#eff8f7">1. Run the CLI command.</text>
+<text x="898" y="613.5" font-family="Inter, Helvetica, Arial, sans-serif" font-size="30" font-weight="550" fill="#eff8f7">2. Open claim_receipts.json.</text>
+<text x="898" y="657" font-family="Inter, Helvetica, Arial, sans-serif" font-size="30" font-weight="550" fill="#eff8f7">3. Check CLAIM-004 was revoked.</text>
+<text x="898" y="700.5" font-family="Inter, Helvetica, Arial, sans-serif" font-size="30" font-weight="550" fill="#eff8f7">4. Compare accuracy_report.md to ground truth.</text>
+    <text x="898" y="860" font-family="Menlo, Consolas, monospace" font-size="24" fill="#45d4c8">Prove 17 DFIR claims in 90 seconds.</text>
+  
+  <g>
+    <rect x="78" y="938" width="1764" height="100" rx="16" fill="#050c12" opacity="0.78" stroke="#2e4350" stroke-width="2"/>
+    <text x="112" y="982" font-family="Inter, Helvetica, Arial, sans-serif" font-size="27" font-weight="750" fill="#eff8f7">Run the command, open the receipts, extend the parser set.</text>
+  </g>
+</svg>

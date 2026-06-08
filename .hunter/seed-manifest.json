@@ -1,0 +1,8 @@
+{
+  "seeded": true,
+  "case_id": "case-alpha",
+  "purpose": "Synthetic but realistic public DFIR evidence case for reproducible judging.",
+  "source": "examples/evidence/case-alpha",
+  "ground_truth": "examples/evidence/case-alpha/ground_truth.json",
+  "generated_sample_run": "artifacts/sample-run"
+}

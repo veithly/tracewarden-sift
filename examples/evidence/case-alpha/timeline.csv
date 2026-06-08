@@ -1,0 +1,8 @@
+timestamp,host,user,process,path,event,sha256
+2026-06-07T03:12:08Z,ACME-WS-014,alice,chrome.exe,C:\Program Files\Google\Chrome\Application\chrome.exe,user browsed vendor docs,3d0f7b8e0a39c5ad6c5ef65e9920cb20c0cb37aee9c826e363c66a92ab1d5a21
+2026-06-07T03:18:41Z,ACME-WS-014,alice,updater.exe,C:\Program Files\AcmeUpdater\updater.exe,signed updater launched,91af238614aa54d230cc2f59b4bc8e3f68db3d1338b76f721d4c5e63f2aa129e
+2026-06-07T03:21:13Z,ACME-WS-014,alice,powershell.exe,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,encoded command executed,b32ca9b4227e8c1f5c8d50a3dc6129a73c9a4ef8b0d6b0cc1fe92cafe1e2d901
+2026-06-07T03:22:04Z,ACME-WS-014,alice,cmd.exe,C:\Windows\System32\cmd.exe,archive staging command executed,0db38d87517d44c9ef7616bd8a87f90e7b753d9d315f342df0cab33ff1e01ad6
+2026-06-07T03:23:29Z,ACME-WS-014,alice,reg.exe,C:\Windows\System32\reg.exe,run key persistence command executed,c7e19d144f6047d524c19fb1d98f29d4d101f06e85cc4461261b3e2bb79bc2bb
+2026-06-07T03:25:44Z,ACME-WS-014,alice,powershell.exe,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,credential dump script invoked,6cc3fbb8ae4f2d152a72e56a9786ef57f8a833dd708d2e9b604264eb12cb3bb2
+2026-06-07T03:28:03Z,ACME-WS-014,alice,tar.exe,C:\Windows\System32\tar.exe,archive created in ProgramData staging path,52b66003d54eb61e4a7e6e1716980e84dcad4d2bb648ab9d6de9c579f8499a67

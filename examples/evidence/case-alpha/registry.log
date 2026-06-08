@@ -1,0 +1,2 @@
+2026-06-07T03:23:29Z host=ACME-WS-014 hive=HKCU key=Software\Microsoft\Windows\CurrentVersion\Run value=AcmeUpdater data=powershell.exe -ExecutionPolicy Bypass -File C:\ProgramData\Acme\check.ps1 actor=alice
+2026-06-07T03:23:31Z host=ACME-WS-014 hive=HKLM key=Software\Microsoft\Windows\CurrentVersion\Run value=SecurityHealth data=C:\Windows\System32\SecurityHealthSystray.exe actor=SYSTEM

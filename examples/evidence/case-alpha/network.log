@@ -1,0 +1,3 @@
+2026-06-07T03:21:14Z host=ACME-WS-014 process=powershell.exe dst=203.0.113.77 dport=80 bytes_out=1482 bytes_in=4211 uri=/a.ps1 verdict=suspicious
+2026-06-07T03:27:18Z host=ACME-WS-014 process=powershell.exe dst=203.0.113.77 dport=443 bytes_out=286921 bytes_in=944 uri=/upload verdict=suspicious
+2026-06-07T03:29:02Z host=ACME-WS-014 process=updater.exe dst=198.51.100.10 dport=443 bytes_out=2281 bytes_in=90012 uri=/signed/update verdict=known_vendor

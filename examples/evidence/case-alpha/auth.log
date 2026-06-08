@@ -1,0 +1,4 @@
+2026-06-07T03:19:02Z host=ACME-WS-014 user=alice event=4624 logon_type=2 source=console result=success
+2026-06-07T03:20:51Z host=ACME-WS-014 user=alice event=4672 privileges=SeDebugPrivilege,SeBackupPrivilege result=success
+2026-06-07T03:24:10Z host=ACME-WS-014 user=svc_backup event=4624 logon_type=3 source=10.17.4.22 result=success
+2026-06-07T03:24:12Z host=ACME-WS-014 user=svc_backup event=4672 privileges=SeBackupPrivilege result=success

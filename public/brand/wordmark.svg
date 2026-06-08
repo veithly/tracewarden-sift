@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 96" role="img" aria-label="TraceWarden SIFT wordmark">
+  <rect width="560" height="96" rx="14" fill="#0a0d11"/>
+  <text x="26" y="60" fill="#e2e8f0" font-family="Menlo, Consolas, monospace" font-size="38" font-weight="700">TraceWarden</text>
+  <text x="350" y="60" fill="#5ce1e6" font-family="Menlo, Consolas, monospace" font-size="38" font-weight="700">SIFT</text>
+  <path d="M486 28h48v40h-48z" fill="#101419" stroke="#32d583" stroke-width="3"/>
+  <path d="M496 42h28M496 54h18" stroke="#e2e8f0" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  
+  <defs>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <pattern id="grid" width="52" height="52" patternUnits="userSpaceOnUse">
+      <path d="M 52 0 L 0 0 0 52" fill="none" stroke="#1c313a" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="#081016"/>
+  <rect width="1920" height="1080" fill="url(#grid)" opacity="0.30"/>
+  <circle cx="1560" cy="150" r="390" fill="#45d4c8" opacity="0.10"/>
+  <circle cx="120" cy="1040" r="420" fill="#f2b760" opacity="0.07"/>
+  <text x="78" y="70" font-family="Menlo, Consolas, monospace" font-size="20" fill="#45d4c8" letter-spacing="2">ACCURACY REPORT</text>
+  <text x="1720" y="70" font-family="Menlo, Consolas, monospace" font-size="20" fill="#a9bdc2">06/08</text>
+  <line x1="78" y1="96" x2="1842" y2="96" stroke="#2e4350" stroke-width="2"/>
+  <text x="78" y="180" font-family="Inter, Helvetica, Arial, sans-serif" font-size="62" font-weight="850" fill="#eff8f7">The run is scored against</text>
+<text x="78" y="244.48000000000002" font-family="Inter, Helvetica, Arial, sans-serif" font-size="62" font-weight="850" fill="#eff8f7">ground truth.</text>
+  
+  
+      <g transform="translate(104 390)">
+        
+  <g>
+    <rect x="0" y="0" width="260" height="136" rx="18" fill="#111b23" stroke="#2e4350" stroke-width="2" filter="url(#shadow)"/>
+    <text x="28" y="58" font-family="Inter, Helvetica, Arial, sans-serif" font-size="45" font-weight="850" fill="#45d4c8">17</text>
+    <text x="28" y="98" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" fill="#a9bdc2">claims evaluated</text>
+  </g>
+        
+  <g>
+    <rect x="300" y="0" width="260" height="136" rx="18" fill="#111b23" stroke="#2e4350" stroke-width="2" filter="url(#shadow)"/>
+    <text x="328" y="58" font-family="Inter, Helvetica, Arial, sans-serif" font-size="45" font-weight="850" fill="#75d38a">16</text>
+    <text x="328" y="98" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" fill="#a9bdc2">confirmed</text>
+  </g>
+        
+  <g>
+    <rect x="600" y="0" width="260" height="136" rx="18" fill="#111b23" stroke="#2e4350" stroke-width="2" filter="url(#shadow)"/>
+    <text x="628" y="58" font-family="Inter, Helvetica, Arial, sans-serif" font-size="45" font-weight="850" fill="#ff6a66">1</text>
+    <text x="628" y="98" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" fill="#a9bdc2">revoked</text>
+  </g>
+        
+  <g>
+    <rect x="900" y="0" width="260" height="136" rx="18" fill="#111b23" stroke="#2e4350" stroke-width="2" filter="url(#shadow)"/>
+    <text x="928" y="58" font-family="Inter, Helvetica, Arial, sans-serif" font-size="45" font-weight="850" fill="#f2b760">0</text>
+    <text x="928" y="98" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" fill="#a9bdc2">hallucinations</text>
+  </g>
+        
+  <g>
+    <rect x="1200" y="0" width="260" height="136" rx="18" fill="#111b23" stroke="#2e4350" stroke-width="2" filter="url(#shadow)"/>
+    <text x="1228" y="58" font-family="Inter, Helvetica, Arial, sans-serif" font-size="45" font-weight="850" fill="#75d38a">1.0</text>
+    <text x="1228" y="98" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" fill="#a9bdc2">precision / recall</text>
+  </g>
+      </g>
+      <rect x="110" y="620" width="800" height="260" rx="18" fill="#071015" stroke="#2e4350" stroke-width="2" filter="url(#shadow)"/>
+      <text x="152" y="686" font-family="Inter, Helvetica, Arial, sans-serif" font-size="33" font-weight="850" fill="#eff8f7">Ground-truth score</text>
+      <text x="152" y="742" font-family="Menlo, Consolas, monospace" font-size="25" fill="#a9bdc2">precision: 1.0</text>
+<text x="152" y="782" font-family="Menlo, Consolas, monospace" font-size="25" fill="#a9bdc2">recall:    1.0</text>
+<text x="152" y="822" font-family="Menlo, Consolas, monospace" font-size="25" fill="#a9bdc2">f1:        1.0</text>
+<text x="152" y="862" font-family="Menlo, Consolas, monospace" font-size="25" fill="#a9bdc2">false positives: 0</text>
+      <rect x="990" y="592" width="720" height="330" rx="18" fill="#071015" stroke="#75d38a" stroke-width="2" filter="url(#shadow)"/>
+      <text x="1032" y="660" font-family="Inter, Helvetica, Arial, sans-serif" font-size="33" font-weight="850" fill="#75d38a">Guardrail tests</text>
+      <text x="1032" y="720" font-family="Menlo, Consolas, monospace" font-size="22" fill="#a9bdc2">test_path_escape_is_blocked ... ok</text>
+<text x="1032" y="757" font-family="Menlo, Consolas, monospace" font-size="22" fill="#a9bdc2">test_run_writes_receipts_and_report ... ok</text>
+<text x="1032" y="794" font-family="Menlo, Consolas, monospace" font-size="22" fill="#a9bdc2">test_schema_excludes_raw_shell ... ok</text>
+<text x="1032" y="831" font-family="Menlo, Consolas, monospace" font-size="22" fill="#a9bdc2">test_verifier_revokes_weak_claim ... ok</text>
+<text x="1032" y="868" font-family="Menlo, Consolas, monospace" font-size="22" fill="#a9bdc2">Ran 4 tests in 0.02s</text>
+<text x="1032" y="905" font-family="Menlo, Consolas, monospace" font-size="22" fill="#75d38a">OK</text>
+  
+  <g>
+    <rect x="78" y="938" width="1764" height="100" rx="16" fill="#050c12" opacity="0.78" stroke="#2e4350" stroke-width="2"/>
+    <text x="112" y="982" font-family="Inter, Helvetica, Arial, sans-serif" font-size="27" font-weight="750" fill="#eff8f7">16 confirmed, 1 revoked, 0 hallucinations.</text>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+node_modules/
+outputs/
+runs/
+
+# Local video renders are submitted through YouTube, not committed.
+pitch/recording/*.mp4
+pitch/recording/*.gif
+pitch/recording/segments/*.mp4
+
+# Regenerable narration/audio intermediates.
+pitch/polish-combined/assets/*.aiff
+pitch/polish-combined/assets/*.wav
+pitch/polish-combined/assets/*.mp3
+
+# Local browser/test traces.
+test-results/
+playwright-report/
+*.trace.zip

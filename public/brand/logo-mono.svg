@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="TraceWarden SIFT monochrome logo">
+  <rect width="128" height="128" rx="18" fill="#0a0d11"/>
+  <path d="M20 28h88v72H20z" fill="none" stroke="#e2e8f0" stroke-width="4"/>
+  <path d="M34 45h60M34 62h42M34 79h54" stroke="#e2e8f0" stroke-width="7" stroke-linecap="round"/>
+</svg>

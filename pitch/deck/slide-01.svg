@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  
+  <defs>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#000000" flood-opacity="0.28"/>
+    </filter>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#1d3038" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="#081016"/>
+  <rect width="1920" height="1080" fill="url(#grid)" opacity="0.34"/>
+  <circle cx="1580" cy="118" r="370" fill="#45d4c8" opacity="0.09"/>
+  <circle cx="180" cy="1010" r="420" fill="#f2b760" opacity="0.07"/>
+  <text x="84" y="78" font-family="Menlo, Consolas, monospace" font-size="21" fill="#45d4c8" letter-spacing="2">TRACEWARDEN SIFT</text>
+  <text x="1708" y="78" font-family="Menlo, Consolas, monospace" font-size="20" fill="#a8bbc0">01/05</text>
+  <line x1="84" y1="104" x2="1836" y2="104" stroke="#2e4350" stroke-width="2"/>
+  
+  <text x="92" y="206" font-family="Inter, Helvetica, Arial, sans-serif" font-size="82" font-weight="850" fill="#eef6f6">Prove 17 DFIR claims in</text>
+<text x="92" y="292.1" font-family="Inter, Helvetica, Arial, sans-serif" font-size="82" font-weight="850" fill="#eef6f6">90 seconds.</text>
+  <text x="96" y="396" font-family="Inter, Helvetica, Arial, sans-serif" font-size="31" font-weight="500" fill="#a8bbc0">Autonomous incident-response findings earn replayable</text>
+<text x="96" y="432.58" font-family="Inter, Helvetica, Arial, sans-serif" font-size="31" font-weight="500" fill="#a8bbc0">receipts before they survive.</text>
+  
+      <g transform="translate(1040 230) rotate(-2)">
+        
+    <g filter="url(#softShadow)">
+      <rect x="0" y="0" width="520" height="128" rx="14" fill="#111b23" stroke="#ff6a66" stroke-width="2"/>
+      <text x="28" y="43" font-family="Menlo, Consolas, monospace" font-size="25" font-weight="700" fill="#ff6a66">CLAIM-004 · REVOKED</text>
+      <text x="28" y="84" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" fill="#eef6f6">weak updater lead stopped</text>
+    </g>
+        
+    <g filter="url(#softShadow)">
+      <rect x="44" y="156" width="520" height="128" rx="14" fill="#111b23" stroke="#75d38a" stroke-width="2"/>
+      <text x="72" y="199" font-family="Menlo, Consolas, monospace" font-size="25" font-weight="700" fill="#75d38a">CLAIM-009 · CONFIRMED</text>
+      <text x="72" y="240" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" fill="#eef6f6">powershell.log + network.log</text>
+    </g>
+        
+    <g filter="url(#softShadow)">
+      <rect x="88" y="312" width="520" height="128" rx="14" fill="#111b23" stroke="#45d4c8" stroke-width="2"/>
+      <text x="116" y="355" font-family="Menlo, Consolas, monospace" font-size="25" font-weight="700" fill="#45d4c8">RECEIPTS · WRITTEN</text>
+      <text x="116" y="396" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" fill="#eef6f6">file · line · parser · hash</text>
+    </g>
+      </g>
+      <g filter="url(#softShadow)">
+        <rect x="92" y="378" width="874" height="410" rx="18" fill="#071015" stroke="#2e4350" stroke-width="2"/>
+        <rect x="92" y="378" width="874" height="48" rx="18" fill="#15242b"/>
+        <circle cx="126" cy="402" r="8" fill="#ff6a66"/><circle cx="154" cy="402" r="8" fill="#f2b760"/><circle cx="182" cy="402" r="8" fill="#75d38a"/>
+        <text x="122" y="538" font-family="Menlo, Consolas, monospace" font-size="24" fill="#a8bbc0">$ PYTHONPATH=src python3 -m tracewarden run examples/evidence/case-alpha --out runs/demo</text>
+<text x="122" y="580" font-family="Menlo, Consolas, monospace" font-size="24" fill="#45d4c8">[seal] evidence root locked · 5 artifacts · manifest hash written</text>
+<text x="122" y="622" font-family="Menlo, Consolas, monospace" font-size="24" fill="#a8bbc0">[plan] parse timeline, auth, PowerShell, registry, network</text>
+<text x="122" y="664" font-family="Menlo, Consolas, monospace" font-size="24" fill="#a8bbc0">[tool] read_powershell_log -&gt; 5 evidence refs</text>
+<text x="122" y="706" font-family="Menlo, Consolas, monospace" font-size="24" fill="#f2b760">[verify] CLAIM-004 lacks cross-source support</text>
+<text x="122" y="748" font-family="Menlo, Consolas, monospace" font-size="24" fill="#ff6a66">[correct] CLAIM-004 revoked; rerouting into PowerShell + network</text>
+<text x="122" y="790" font-family="Menlo, Consolas, monospace" font-size="24" fill="#75d38a">[write] claim_receipts.json · accuracy_report.md · incident_report.html</text>
+      </g>
+  
+        <g>
+          <rect x="112" y="796" width="30" height="30" rx="8" fill="#45d4c8" opacity="0.92"/>
+          <text x="164" y="822" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" fill="#eef6f6">Sealed evidence root</text>
+        </g>
+
+        <g>
+          <rect x="112" y="850" width="30" height="30" rx="8" fill="#f2b760" opacity="0.92"/>
+          <text x="164" y="876" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" fill="#eef6f6">Typed read-only parsers</text>
+        </g>
+
+        <g>
+          <rect x="112" y="904" width="30" height="30" rx="8" fill="#45d4c8" opacity="0.92"/>
+          <text x="164" y="930" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" fill="#eef6f6">Verifier-controlled claim states</text>
+        </g>
+  <text x="92" y="1018" font-family="Menlo, Consolas, monospace" font-size="20" fill="#a8bbc0">TraceWarden SIFT · FIND EVIL! · reproducible local package</text>
+</svg>

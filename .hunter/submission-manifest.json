@@ -1,0 +1,51 @@
+{
+  "project": "TraceWarden SIFT",
+  "tagline": "Prove 17 DFIR claims in 90 seconds.",
+  "hackathon": "FIND EVIL!",
+  "repo_url": "https://github.com/veithly/tracewarden-sift",
+  "video_url": "PENDING: add canonical YouTube watch URL after upload",
+  "deck_url": "https://github.com/veithly/tracewarden-sift/blob/main/pitch/deck/tracewarden-sift-deck.pdf",
+  "live_url": "",
+  "local_run": "PYTHONPATH=src python3 -m tracewarden run examples/evidence/case-alpha --out runs/demo",
+  "required_artifacts": {
+    "readme": "README.md",
+    "license": "LICENSE",
+    "submission": "SUBMISSION.md",
+    "architecture_diagram": "docs/architecture/tracewarden-architecture.svg",
+    "dataset_docs": "docs/evidence-dataset.md",
+    "accuracy_report": "artifacts/sample-run/accuracy_report.md",
+    "execution_logs": "artifacts/sample-run/execution_log.jsonl",
+    "claim_receipts": "artifacts/sample-run/claim_receipts.json",
+    "pitch_deck_pptx": "pitch/deck/tracewarden-sift-pitch.pptx",
+    "pitch_deck_pdf": "pitch/deck/tracewarden-sift-deck.pdf",
+    "pitch_deck_previews": "pitch/deck/previews/",
+    "combined_video": "pitch/recording/pitch-demo-combined-final.mp4",
+    "combined_video_source": "pitch/polish-combined/index.html",
+    "combined_video_qa_frames": "pitch/polish-combined/qa/",
+    "combined_video_captions": "pitch/recording/captions.srt",
+    "video_trailer_gif": "pitch/recording/trailer.gif",
+    "video_outline": "pitch/recording/video-outline.md",
+    "narration": "artifacts/narration.json",
+    "presenter_training": "pitch/training/presenter-training.md",
+    "judge_qa_training": "pitch/training/judge-qa-bank.md",
+    "submission_training": "pitch/training/submission-training.md"
+  },
+  "local_deliverables": {
+    "deck_pptx_bytes": 850152,
+    "video_duration_seconds": 81.4,
+    "video_resolution": "1920x1080",
+    "video_audio": "AAC, mean volume -17.4 dB",
+    "video_upload_status": "local MP4 ready; YouTube upload still requires user account confirmation"
+  },
+  "track_fit": {
+    "autonomous_execution_quality": "Planner/tool/verifier/correct/write sequence is logged.",
+    "ir_accuracy": "Ground-truth scoring reports precision, recall, false positives, false negatives, and hallucinations.",
+    "security_reliability_guardrails": "Typed read-only tool surface and path guard tests.",
+    "traceability": "Every confirmed claim maps to file, line, parser, hash, and tool call."
+  },
+  "known_limitations": [
+    "One packaged log/timeline case rather than full SIFT catalog coverage.",
+    "Deterministic local agent rules; future LLM planners can call the same verifier."
+  ],
+  "human_confirmation_required": true
+}

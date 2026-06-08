@@ -1,0 +1,35 @@
+{
+  "surfaces": [
+    {
+      "surface": "terminal",
+      "entry": "src/tracewarden/cli.py",
+      "data": "examples/evidence/case-alpha",
+      "output": "runs/<run_id>"
+    },
+    {
+      "surface": "receipts",
+      "entry": "src/tracewarden/reports.py",
+      "data": "Claim model",
+      "output": "claim_receipts.json and incident_report.html"
+    },
+    {
+      "surface": "accuracy",
+      "entry": "src/tracewarden/accuracy.py",
+      "data": "ground_truth.json",
+      "output": "accuracy_report.json and accuracy_report.md"
+    },
+    {
+      "surface": "architecture",
+      "entry": "docs/architecture.md",
+      "data": "visual-build-contract",
+      "output": "tracewarden-architecture.svg"
+    }
+  ],
+  "real_backbones": [
+    "local evidence files",
+    "persistent run artifacts",
+    "ground-truth accuracy harness",
+    "structured execution logs"
+  ],
+  "no_reviewer_visible_mocks": true
+}

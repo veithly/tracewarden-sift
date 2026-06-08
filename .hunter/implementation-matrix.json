@@ -1,0 +1,72 @@
+{
+  "requirements": [
+    {
+      "id": "REQ-001",
+      "priority": "P0",
+      "user_case": "HERO PATH",
+      "component": "tracewarden.tools.EvidenceToolset",
+      "data_source": "examples/evidence/case-alpha",
+      "state_contract": "read-only evidence root and evidence hash manifest",
+      "test": "tests/test_guardrails.py",
+      "status": "planned"
+    },
+    {
+      "id": "REQ-002",
+      "priority": "P0",
+      "user_case": "HERO PATH",
+      "component": "tracewarden.agent.TraceWardenAgent",
+      "data_source": "timeline/auth/powershell/network logs",
+      "state_contract": "claim status transitions",
+      "test": "tests/test_agent_loop.py",
+      "status": "planned"
+    },
+    {
+      "id": "REQ-003",
+      "priority": "P0",
+      "user_case": "HERO PATH",
+      "component": "tracewarden.reports.ReportWriter",
+      "data_source": "run claim model",
+      "state_contract": "JSON receipts, JSONL spans, HTML/Markdown reports",
+      "test": "tests/test_reports.py",
+      "status": "planned"
+    },
+    {
+      "id": "REQ-004",
+      "priority": "P1",
+      "user_case": "Judge review",
+      "component": "tracewarden.accuracy.AccuracyScorer",
+      "data_source": "ground_truth.json",
+      "state_contract": "TP/FP/FN/hallucination metrics",
+      "test": "tests/test_accuracy.py",
+      "status": "planned"
+    },
+    {
+      "id": "REQ-005",
+      "priority": "P1",
+      "user_case": "Maintainer",
+      "component": "tracewarden.mcp_schema",
+      "data_source": "tool schema definitions",
+      "state_contract": "MCP-style typed read-only tool surface",
+      "test": "tests/test_mcp_schema.py",
+      "status": "planned"
+    },
+    {
+      "id": "REQ-006",
+      "priority": "P1",
+      "user_case": "Junior analyst",
+      "component": "docs/evidence-dataset.md",
+      "data_source": "evidence manifest",
+      "state_contract": "dataset reproducibility docs",
+      "test": "tests/test_cli.py",
+      "status": "planned"
+    }
+  ],
+  "delivery_mode": "combined-pitch-demo",
+  "cut_list": [
+    "full SIFT 200+ tool coverage",
+    "live endpoint response",
+    "SIEM writeback",
+    "LLM provider integration",
+    "SOC dashboard"
+  ]
+}

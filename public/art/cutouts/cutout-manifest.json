@@ -1,0 +1,5 @@
+{
+  "not_used": true,
+  "reason": "TraceWarden SIFT uses real terminal/report artifacts instead of generated cutout art.",
+  "command_recorded": "node /Users/rick/Documents/MySkill/hackathonhunter-skill/scripts/cutout_assets.mjs public/art/raw --out public/art/cutouts --brief-dir public/art/briefs --usage \"not used for TraceWarden terminal report\" --auto-key --trim"
+}

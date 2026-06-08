@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  
+  <defs>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#000000" flood-opacity="0.28"/>
+    </filter>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#1d3038" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="#081016"/>
+  <rect width="1920" height="1080" fill="url(#grid)" opacity="0.34"/>
+  <circle cx="1580" cy="118" r="370" fill="#45d4c8" opacity="0.09"/>
+  <circle cx="180" cy="1010" r="420" fill="#f2b760" opacity="0.07"/>
+  <text x="84" y="78" font-family="Menlo, Consolas, monospace" font-size="21" fill="#45d4c8" letter-spacing="2">WHY IT MATTERS</text>
+  <text x="1708" y="78" font-family="Menlo, Consolas, monospace" font-size="20" fill="#a8bbc0">02/05</text>
+  <line x1="84" y1="104" x2="1836" y2="104" stroke="#2e4350" stroke-width="2"/>
+  
+  <text x="92" y="206" font-family="Inter, Helvetica, Arial, sans-serif" font-size="68" font-weight="850" fill="#eef6f6">Unverified agent claims</text>
+<text x="92" y="277.4" font-family="Inter, Helvetica, Arial, sans-serif" font-size="68" font-weight="850" fill="#eef6f6">pollute incident response.</text>
+  <text x="96" y="396" font-family="Inter, Helvetica, Arial, sans-serif" font-size="31" font-weight="500" fill="#a8bbc0">The failure mode is not a weak summary. It is a false lead</text>
+<text x="96" y="432.58" font-family="Inter, Helvetica, Arial, sans-serif" font-size="31" font-weight="500" fill="#a8bbc0">that burns responder time.</text>
+  
+      <g filter="url(#softShadow)">
+        <rect x="104" y="382" width="740" height="340" rx="18" fill="#111b23" stroke="#2e4350" stroke-width="2"/>
+        <text x="144" y="448" font-family="Inter, Helvetica, Arial, sans-serif" font-size="33" font-weight="800" fill="#ff6a66">Weak path</text>
+        <text x="144" y="510" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" fill="#eef6f6">Process looks suspicious.</text>
+        <text x="144" y="564" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" fill="#a8bbc0">No second source. Benign vendor traffic.</text>
+        <line x1="144" y1="612" x2="790" y2="612" stroke="#2e4350" stroke-width="2"/>
+        <text x="144" y="672" font-family="Menlo, Consolas, monospace" font-size="26" fill="#ff6a66">CLAIM-004 -> revoked</text>
+      </g>
+      <g filter="url(#softShadow)">
+        <rect x="946" y="382" width="740" height="340" rx="18" fill="#111b23" stroke="#75d38a" stroke-width="2"/>
+        <text x="986" y="448" font-family="Inter, Helvetica, Arial, sans-serif" font-size="33" font-weight="800" fill="#75d38a">Receipt path</text>
+        <text x="986" y="510" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" fill="#eef6f6">PowerShell download chain.</text>
+        <text x="986" y="564" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" fill="#a8bbc0">Network beacon and auth anomaly line up.</text>
+        <line x1="986" y1="612" x2="1632" y2="612" stroke="#2e4350" stroke-width="2"/>
+        <text x="986" y="672" font-family="Menlo, Consolas, monospace" font-size="26" fill="#75d38a">confirmed -> claim_receipts.json</text>
+      </g>
+  
+        <g>
+          <rect x="112" y="796" width="30" height="30" rx="8" fill="#45d4c8" opacity="0.92"/>
+          <text x="164" y="822" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" fill="#eef6f6">Status quo: agent says a process is suspicious</text>
+        </g>
+
+        <g>
+          <rect x="112" y="850" width="30" height="30" rx="8" fill="#f2b760" opacity="0.92"/>
+          <text x="164" y="876" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" fill="#eef6f6">Breakage: responders chase the wrong artifact</text>
+        </g>
+
+        <g>
+          <rect x="112" y="904" width="30" height="30" rx="8" fill="#45d4c8" opacity="0.92"/>
+          <text x="164" y="930" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" fill="#eef6f6">TraceWarden: unsupported claims get revoked</text>
+        </g>
+  <text x="92" y="1018" font-family="Menlo, Consolas, monospace" font-size="20" fill="#a8bbc0">TraceWarden SIFT · FIND EVIL! · reproducible local package</text>
+</svg>

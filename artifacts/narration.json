@@ -1,0 +1,65 @@
+{
+  "first_sentence": "Prove 17 DFIR claims in 90 seconds.",
+  "project": "TraceWarden SIFT",
+  "hero": "Prove 17 DFIR claims in 90 seconds.",
+  "target_duration_seconds": 81,
+  "voice": "macOS:say:Samantha",
+  "scenes": [
+    {
+      "id": "01-cold-open",
+      "duration": 7.79,
+      "screen_action": "TraceWarden SIFT",
+      "narration": "TraceWarden SIFT proves seventeen D F I R claims in ninety seconds. Every finding needs a receipt before it survives.",
+      "proof": "Prove 17 DFIR claims in 90 seconds."
+    },
+    {
+      "id": "02-risk",
+      "duration": 9.56,
+      "screen_action": "Why this matters",
+      "narration": "A defender agent that cannot prove its claims burns responder time. The demo starts with a plausible updater lead, then forces that claim to earn support.",
+      "proof": "A false lead creates a second incident."
+    },
+    {
+      "id": "03-terminal-run",
+      "duration": 10.03,
+      "screen_action": "Live terminal execution",
+      "narration": "Here is the live terminal path. The agent seals the evidence root, calls typed read only parsers, evaluates seventeen claims, and writes the reports.",
+      "proof": "One terminal command runs the case."
+    },
+    {
+      "id": "04-correction",
+      "duration": 10.57,
+      "screen_action": "Self-correction sequence",
+      "narration": "The updater process looked suspicious at first. The verifier found a signed vendor path and no second source, so TraceWarden revoked CLAIM zero zero four and rerouted.",
+      "proof": "CLAIM-004 is revoked."
+    },
+    {
+      "id": "05-receipts",
+      "duration": 11.77,
+      "screen_action": "Audit trail",
+      "narration": "The replacement path is receipt backed. CLAIM zero zero nine ties PowerShell to network evidence, with file names, line numbers, parser names, hashes, and tool calls.",
+      "proof": "Surviving claims point to evidence."
+    },
+    {
+      "id": "06-accuracy",
+      "duration": 10.98,
+      "screen_action": "Accuracy report",
+      "narration": "The package measures truth instead of trusting the agent. Sixteen claims are confirmed, one is revoked, precision and recall are one point zero, and hallucinations are zero.",
+      "proof": "The run is scored against ground truth."
+    },
+    {
+      "id": "07-architecture",
+      "duration": 10.85,
+      "screen_action": "Architecture",
+      "narration": "The planner can be an L L M, but the safety boundary is deterministic. Evidence is sealed, tools are read only, the verifier owns claim state, and receipts are replayable.",
+      "proof": "The guardrail sits below the planner."
+    },
+    {
+      "id": "08-close",
+      "duration": 9.85,
+      "screen_action": "Submission package",
+      "narration": "Everything in the video is reproducible from the repo. Run the command, open the receipts, and add the next SIFT parser family to the same verifier contract.",
+      "proof": "Run it, inspect it, extend it."
+    }
+  ]
+}
