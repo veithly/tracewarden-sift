@@ -3,7 +3,7 @@
   "tagline": "Prove 17 DFIR claims in 90 seconds.",
   "hackathon": "FIND EVIL!",
   "repo_url": "https://github.com/veithly/tracewarden-sift",
-  "video_url": "PENDING: add canonical YouTube watch URL after upload",
+  "video_url": "https://www.youtube.com/watch?v=WQ51-db0OoE",
   "deck_url": "https://github.com/veithly/tracewarden-sift/blob/main/pitch/deck/tracewarden-sift-deck.pdf",
   "live_url": "",
   "local_run": "PYTHONPATH=src python3 -m tracewarden run examples/evidence/case-alpha --out runs/demo",
@@ -35,7 +35,7 @@
     "video_duration_seconds": 81.4,
     "video_resolution": "1920x1080",
     "video_audio": "AAC, mean volume -17.4 dB",
-    "video_upload_status": "local MP4 ready; YouTube upload still requires user account confirmation"
+    "video_upload_status": "uploaded to YouTube as unlisted"
   },
   "track_fit": {
     "autonomous_execution_quality": "Planner/tool/verifier/correct/write sequence is logged.",

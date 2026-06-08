@@ -13,16 +13,16 @@
 
 ## 提交前必须补的外部 URL
 
-1. GitHub repo URL
-2. YouTube video URL
-3. 可选 deck PDF public URL
+1. GitHub repo URL: `https://github.com/veithly/tracewarden-sift`
+2. YouTube video URL: `https://www.youtube.com/watch?v=WQ51-db0OoE`
+3. 可选 deck PDF public URL: `https://github.com/veithly/tracewarden-sift/blob/main/pitch/deck/tracewarden-sift-deck.pdf`
 
 视频上传规则：
 
-- 上传 `pitch/recording/pitch-demo-combined-final.mp4`
+- 已上传 `pitch/recording/pitch-demo-combined-final.mp4`
 - YouTube 设置为 **Unlisted**
-- Devpost 填 canonical URL：`https://www.youtube.com/watch?v=<id>`
-- 不要填 `youtu.be/<id>`
+- Devpost 填 canonical URL：`https://www.youtube.com/watch?v=WQ51-db0OoE`
+- 不要填 `youtu.be/WQ51-db0OoE`
 
 ## Devpost 字段怎么填
 
@@ -92,4 +92,4 @@ Python, Protocol SIFT-style MCP schema, local SIFT-style evidence, HTML reports,
 
 ## 口头提交确认句
 
-“我现在只差两个外部链接：GitHub repo URL 和 YouTube video URL。本地 deck、video、README、reports、manifest 和 audits 都已经准备好。等链接补上，我再做最终 Devpost 填表，最后 submit 前停下来给你确认。”
+“GitHub repo、YouTube video、deck、README、reports、manifest 和 audits 都已经准备好。现在可以填 Devpost 表单；最后 submit 前停下来给你确认。”

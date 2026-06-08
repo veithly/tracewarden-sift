@@ -121,7 +121,7 @@ TraceWarden proves depth on one log/timeline case. It does not cover the full SI
 ## Required External Links Before Final Devpost Submit
 
 - Repository URL: `https://github.com/veithly/tracewarden-sift`
-- Demo video URL: `PENDING_YOUTUBE_WATCH_URL`
+- Demo video URL: `https://www.youtube.com/watch?v=WQ51-db0OoE`
 - Optional public deck URL: `https://github.com/veithly/tracewarden-sift/blob/main/pitch/deck/tracewarden-sift-deck.pdf`
 - Live URL: use local run instructions unless a hosted URL is added
 
@@ -154,6 +154,6 @@ Yes. AI tools were used for pair-programming, review, and media production suppo
 - [ ] YouTube video is unlisted and playable without login.
 - [ ] Devpost video URL uses `https://www.youtube.com/watch?v=<id>`.
 - [ ] Repo URL is HTTPS, not SSH.
-- [ ] `PENDING_YOUTUBE_WATCH_URL` is replaced.
+- [ ] YouTube video plays without login.
 - [ ] Final form is reviewed before clicking Submit.
 - [ ] Confirmation screenshot is saved to `pitch/submission-receipt.png`.
