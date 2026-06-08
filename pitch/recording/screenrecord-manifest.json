@@ -1,0 +1,152 @@
+{
+  "generated_at": "2026-06-08T17:02:28.047Z",
+  "source_recording": "pitch/recording/raw.webm",
+  "final_video": "pitch/recording/pitch-demo-combined-final.mp4",
+  "voice": "mimo:mimo-v2.5-tts:Chloe",
+  "command_stdout": [
+    "[seal] evidence root locked",
+    "[plan] collect timeline, auth, powershell, registry, network evidence",
+    "[tool] typed read-only parsers completed",
+    "[verify] claims evaluated: 17",
+    "[correct] CLAIM-004 revoked; rerouted into powershell + network evidence",
+    "[write] claim receipts: runs/demo-video/claim_receipts.json",
+    "[write] accuracy report: runs/demo-video/accuracy_report.md",
+    "[write] incident report: runs/demo-video/incident_report.html",
+    "{\"accuracy\": {\"confirmed\": 16, \"f1\": 1.0, \"false_negative_ids\": [], \"false_negatives\": 0, \"false_positive_ids\": [], \"hallucinated_claim_ids\": [], \"precision\": 1.0, \"recall\": 1.0, \"revoked\": 1, \"total_claims\": 17, \"true_positives\": 16}}"
+  ],
+  "accuracy": {
+    "confirmed": 16,
+    "f1": 1,
+    "false_negative_ids": [],
+    "false_negatives": 0,
+    "false_positive_ids": [],
+    "hallucinated_claim_ids": [],
+    "precision": 1,
+    "recall": 1,
+    "revoked": 1,
+    "total_claims": 17,
+    "true_positives": 16
+  },
+  "scenes": [
+    {
+      "id": "01-hook",
+      "label": "Recorded demo",
+      "title": "Prove 17 DFIR claims in a live run.",
+      "screen": "hero",
+      "proof": "Repo command, receipts, reports, tests.",
+      "narration": "TraceWarden SIFT proves seventeen DFIR claims in a recorded run. The command writes receipts before findings reach the report.",
+      "audio_path": "pitch/recording/audio-screenrecord/01-hook.padded.wav",
+      "voice_duration_seconds": 9.28,
+      "duration_seconds": 10.43,
+      "start_seconds": 0
+    },
+    {
+      "id": "02-command",
+      "label": "Terminal",
+      "title": "One command starts the case.",
+      "screen": "command",
+      "proof": "PYTHONPATH=src python3 -m tracewarden run examples/evidence/case-alpha --out runs/demo-video",
+      "narration": "The demo starts in the repo root. One command runs the packaged case-alpha evidence and writes a fresh output folder.",
+      "audio_path": "pitch/recording/audio-screenrecord/02-command.padded.wav",
+      "voice_duration_seconds": 10.4,
+      "duration_seconds": 11.55,
+      "start_seconds": 10.43
+    },
+    {
+      "id": "03-live-run",
+      "label": "Stdout",
+      "title": "The recorded run evaluates 17 claims.",
+      "screen": "stdout",
+      "proof": "Actual stdout captured from the CLI.",
+      "narration": "The agent seals the evidence root, calls read-only parsers, evaluates seventeen claims, and writes the reports. This is the stdout from the run.",
+      "audio_path": "pitch/recording/audio-screenrecord/03-live-run.padded.wav",
+      "voice_duration_seconds": 9.76,
+      "duration_seconds": 12.5,
+      "start_seconds": 21.98
+    },
+    {
+      "id": "04-revocation",
+      "label": "Self-correction",
+      "title": "CLAIM-004 gets revoked.",
+      "screen": "claim004",
+      "proof": "Signed updater path, no corroboration.",
+      "narration": "CLAIM zero zero four fails. The timeline shows a signed updater path, and no second source supports malicious activity, so the verifier revokes it.",
+      "audio_path": "pitch/recording/audio-screenrecord/04-revocation.padded.wav",
+      "voice_duration_seconds": 9.76,
+      "duration_seconds": 10.91,
+      "start_seconds": 34.48
+    },
+    {
+      "id": "05-reroute",
+      "label": "Reroute",
+      "title": "TraceWarden follows stronger evidence.",
+      "screen": "claim009",
+      "proof": "PowerShell and network parsers support the replacement claim.",
+      "narration": "TraceWarden reroutes into PowerShell and network evidence. CLAIM zero zero nine survives because two parsers point to the same attacker script.",
+      "audio_path": "pitch/recording/audio-screenrecord/05-reroute.padded.wav",
+      "voice_duration_seconds": 8.64,
+      "duration_seconds": 9.79,
+      "start_seconds": 45.39
+    },
+    {
+      "id": "06-receipt",
+      "label": "Receipt",
+      "title": "Judges can inspect every field.",
+      "screen": "receiptFields",
+      "proof": "File, line, parser, hash, tool calls.",
+      "narration": "The receipt is inspectable. It lists file, line, parser, hash, and the tool calls behind the finding.",
+      "audio_path": "pitch/recording/audio-screenrecord/06-receipt.padded.wav",
+      "voice_duration_seconds": 7.2,
+      "duration_seconds": 8.35,
+      "start_seconds": 55.18
+    },
+    {
+      "id": "07-accuracy",
+      "label": "Accuracy",
+      "title": "The report scores the run against ground truth.",
+      "screen": "accuracy",
+      "proof": "16 confirmed, 1 revoked, 0 hallucinations.",
+      "narration": "The accuracy report compares the run to ground truth. It records sixteen confirmed claims, one revoked claim, zero hallucinations, and precision and recall of one point zero.",
+      "audio_path": "pitch/recording/audio-screenrecord/07-accuracy.padded.wav",
+      "voice_duration_seconds": 11.04,
+      "duration_seconds": 12.19,
+      "start_seconds": 63.53
+    },
+    {
+      "id": "08-tests",
+      "label": "Tests",
+      "title": "The guardrails are tested.",
+      "screen": "tests",
+      "proof": "Path escape, report writing, schema safety, weak claim revocation.",
+      "narration": "The tests cover path escape, report writing, schema safety, and weak claim revocation. The demo does not rely on a hidden manual fix.",
+      "audio_path": "pitch/recording/audio-screenrecord/08-tests.padded.wav",
+      "voice_duration_seconds": 9.12,
+      "duration_seconds": 10.27,
+      "start_seconds": 75.72
+    },
+    {
+      "id": "09-architecture",
+      "label": "Boundary",
+      "title": "The safety boundary sits below the planner.",
+      "screen": "architecture",
+      "proof": "Sealed evidence, typed tools, verifier state, receipts.",
+      "narration": "The safety boundary stays below any planner: sealed evidence, typed read-only tools, verifier-owned claim state, and replayable receipts.",
+      "audio_path": "pitch/recording/audio-screenrecord/09-architecture.padded.wav",
+      "voice_duration_seconds": 8.8,
+      "duration_seconds": 9.95,
+      "start_seconds": 85.99
+    },
+    {
+      "id": "10-close",
+      "label": "Submission",
+      "title": "Run it, inspect it, extend it.",
+      "screen": "close",
+      "proof": "Repo, case, reports, deck, video source, tests.",
+      "narration": "The repo includes the case, reports, deck, video source, and tests. Run it, inspect CLAIM zero zero four, then add the next SIFT parser.",
+      "audio_path": "pitch/recording/audio-screenrecord/10-close.padded.wav",
+      "voice_duration_seconds": 8.96,
+      "duration_seconds": 10.11,
+      "start_seconds": 95.94
+    }
+  ]
+}

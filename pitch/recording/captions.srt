@@ -1,39 +1,50 @@
 1
-00:00:00,000 --> 00:00:08,180
-TraceWarden SIFT proves seventeen DFIR claims in
-ninety seconds. The agent has to earn a receipt for
+00:00:00,000 --> 00:00:10,430
+TraceWarden SIFT proves seventeen DFIR claims in a recorded
+run. The command writes receipts before findings reach the
 
 2
-00:00:08,430 --> 00:00:18,210
-A defender agent can sound confident and still waste
-the responder's hour. This run starts with a plausible
+00:00:10,430 --> 00:00:21,980
+The demo starts in the repo root. One command runs the
+packaged case-alpha evidence and writes a fresh output folder.
 
 3
-00:00:18,460 --> 00:00:28,240
-Here is the run. TraceWarden seals the evidence root,
-calls read-only parsers, evaluates seventeen claims,
+00:00:21,980 --> 00:00:34,480
+The agent seals the evidence root, calls read-only parsers,
+evaluates seventeen claims, and writes the reports. This is
 
 4
-00:00:28,490 --> 00:00:40,350
-The updater process looks suspicious at first. The
-verifier finds a signed vendor path and no second
+00:00:34,480 --> 00:00:45,390
+CLAIM zero zero four fails. The timeline shows a signed
+updater path, and no second source supports malicious
 
 5
-00:00:40,600 --> 00:00:49,900
-The replacement path has receipts. Claim zero zero
-nine ties PowerShell to network evidence with file
+00:00:45,390 --> 00:00:55,180
+TraceWarden reroutes into PowerShell and network evidence.
+CLAIM zero zero nine survives because two parsers point to the
 
 6
-00:00:50,150 --> 00:00:58,330
-The scorer checks the run against ground truth. It
-confirms sixteen claims, revokes one, and reports zero
+00:00:55,180 --> 00:01:03,530
+The receipt is inspectable. It lists file, line, parser, hash,
+and the tool calls behind the finding.
 
 7
-00:00:58,580 --> 00:01:09,800
-An LLM can plan the next step. The safety boundary
-stays deterministic: sealed evidence, read-only tools,
+00:01:03,530 --> 00:01:15,720
+The accuracy report compares the run to ground truth. It
+records sixteen confirmed claims, one revoked claim, zero
 
 8
-00:01:10,050 --> 00:01:20,790
-The repo includes the case, receipts, reports, tests,
-deck, and video source. Run the command, inspect claim
+00:01:15,720 --> 00:01:25,990
+The tests cover path escape, report writing, schema safety,
+and weak claim revocation. The demo does not rely on a hidden
+
+9
+00:01:25,990 --> 00:01:35,940
+The safety boundary stays below any planner: sealed evidence,
+typed read-only tools, verifier-owned claim state, and
+
+10
+00:01:35,940 --> 00:01:46,050
+The repo includes the case, reports, deck, video source, and
+tests. Run it, inspect CLAIM zero zero four, then add the next
+

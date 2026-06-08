@@ -1,0 +1,1 @@
+The tests cover path escape, report writing, schema safety, and weak claim revocation. The demo does not rely on a hidden manual fix.

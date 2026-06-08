@@ -3,7 +3,7 @@
   "tagline": "Prove 17 DFIR claims in 90 seconds.",
   "hackathon": "FIND EVIL!",
   "repo_url": "https://github.com/veithly/tracewarden-sift",
-  "video_url": "https://www.youtube.com/watch?v=IM85o2Z0guM",
+  "video_url": "https://www.youtube.com/watch?v=mqaZrgKiehc",
   "deck_url": "https://github.com/veithly/tracewarden-sift/blob/main/pitch/deck/tracewarden-sift-deck.pdf",
   "live_url": "",
   "local_run": "PYTHONPATH=src python3 -m tracewarden run examples/evidence/case-alpha --out runs/demo",
@@ -32,11 +32,11 @@
   },
   "local_deliverables": {
     "deck_pptx_bytes": 850152,
-    "video_duration_seconds": 81.16,
+    "video_duration_seconds": 106.15,
     "video_resolution": "1920x1080",
-    "video_audio": "Mimo narration, AAC, mean volume -17.5 dB, max volume -0.8 dB",
-    "video_upload_status": "uploaded to YouTube as unlisted on 2026-06-08",
-    "video_upload_confirmation": "pitch/youtube-upload-confirmation-mimo.png"
+    "video_audio": "Mimo narration, AAC, mean volume -16.2 dB, max volume 0.0 dB",
+    "video_upload_status": "uploaded to YouTube as unlisted on 2026-06-09",
+    "video_upload_confirmation": "pitch/youtube-upload-confirmation-screenrecord-mimo.png"
   },
   "track_fit": {
     "autonomous_execution_quality": "Planner/tool/verifier/correct/write sequence is logged.",

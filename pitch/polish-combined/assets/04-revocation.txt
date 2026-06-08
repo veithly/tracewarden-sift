@@ -1,0 +1,1 @@
+CLAIM zero zero four fails. The timeline shows a signed updater path, and no second source supports malicious activity, so the verifier revokes it.

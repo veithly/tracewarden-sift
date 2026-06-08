@@ -7,9 +7,14 @@ outputs/
 runs/
 
 # Local video renders are submitted through YouTube, not committed.
+pitch/recording/*.webm
+pitch/recording/*.mov
 pitch/recording/*.mp4
 pitch/recording/*.gif
 pitch/recording/segments/*.mp4
+pitch/recording/audio-screenrecord/
+pitch/recording/audio-screenrecord/*.wav
+pitch/recording/audio-screenrecord/*.mp3
 
 # Regenerable narration/audio intermediates.
 pitch/polish-combined/assets/*.aiff

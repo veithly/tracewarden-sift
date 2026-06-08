@@ -14,15 +14,15 @@
 ## 提交前必须补的外部 URL
 
 1. GitHub repo URL: `https://github.com/veithly/tracewarden-sift`
-2. YouTube video URL: `https://www.youtube.com/watch?v=IM85o2Z0guM`
+2. YouTube video URL: `https://www.youtube.com/watch?v=mqaZrgKiehc`
 3. 可选 deck PDF public URL: `https://github.com/veithly/tracewarden-sift/blob/main/pitch/deck/tracewarden-sift-deck.pdf`
 
 视频上传规则：
 
 - 已上传 `pitch/recording/pitch-demo-combined-final.mp4`
 - YouTube 设置为 **Unlisted**
-- Devpost 填 canonical URL：`https://www.youtube.com/watch?v=IM85o2Z0guM`
-- 不要填 `youtu.be/IM85o2Z0guM`
+- Devpost 填 canonical URL：`https://www.youtube.com/watch?v=mqaZrgKiehc`
+- 不要填 YouTube 短链；Devpost 只用上面的 canonical watch URL
 
 ## Devpost 字段怎么填
 

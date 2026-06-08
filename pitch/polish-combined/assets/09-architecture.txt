@@ -1,0 +1,1 @@
+The safety boundary stays below any planner: sealed evidence, typed read-only tools, verifier-owned claim state, and replayable receipts.

@@ -1,42 +1,52 @@
 [
   {
-    "id": "01-cold-open",
+    "id": "01-hook",
     "atMs": 0,
-    "durationMs": 8430
+    "durationMs": 10430
   },
   {
-    "id": "02-risk",
-    "atMs": 8430,
-    "durationMs": 10030
+    "id": "02-command",
+    "atMs": 10430,
+    "durationMs": 11550
   },
   {
-    "id": "03-terminal-run",
-    "atMs": 18460,
-    "durationMs": 10030
+    "id": "03-live-run",
+    "atMs": 21980,
+    "durationMs": 12500
   },
   {
-    "id": "04-correction",
-    "atMs": 28490,
-    "durationMs": 12110
+    "id": "04-revocation",
+    "atMs": 34480,
+    "durationMs": 10910
   },
   {
-    "id": "05-receipts",
-    "atMs": 40600,
-    "durationMs": 9550
+    "id": "05-reroute",
+    "atMs": 45390,
+    "durationMs": 9790
   },
   {
-    "id": "06-accuracy",
-    "atMs": 50150,
-    "durationMs": 8430
+    "id": "06-receipt",
+    "atMs": 55180,
+    "durationMs": 8350
   },
   {
-    "id": "07-architecture",
-    "atMs": 58580,
-    "durationMs": 11470
+    "id": "07-accuracy",
+    "atMs": 63530,
+    "durationMs": 12190
   },
   {
-    "id": "08-close",
-    "atMs": 70050,
-    "durationMs": 10990
+    "id": "08-tests",
+    "atMs": 75720,
+    "durationMs": 10270
+  },
+  {
+    "id": "09-architecture",
+    "atMs": 85990,
+    "durationMs": 9950
+  },
+  {
+    "id": "10-close",
+    "atMs": 95940,
+    "durationMs": 10110
   }
 ]

@@ -1,0 +1,1 @@
+The accuracy report compares the run to ground truth. It records sixteen confirmed claims, one revoked claim, zero hallucinations, and precision and recall of one point zero.

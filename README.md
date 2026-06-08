@@ -4,7 +4,7 @@ TraceWarden SIFT is a terminal-native guardrail for Protocol SIFT agents. It mak
 
 In the demo case, the agent starts with a plausible updater lead, challenges it, revokes it, reroutes into PowerShell and network evidence, then writes claim receipts, an execution log, and an accuracy report.
 
-Demo video: https://www.youtube.com/watch?v=IM85o2Z0guM
+Demo video: https://www.youtube.com/watch?v=mqaZrgKiehc
 
 Pitch deck: `pitch/deck/tracewarden-sift-deck.pdf`
 

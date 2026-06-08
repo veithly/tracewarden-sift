@@ -1,0 +1,1 @@
+TraceWarden SIFT proves seventeen DFIR claims in a recorded run. The command writes receipts before findings reach the report.

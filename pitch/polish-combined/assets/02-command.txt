@@ -1,0 +1,1 @@
+The demo starts in the repo root. One command runs the packaged case-alpha evidence and writes a fresh output folder.

@@ -1,25 +1,16 @@
-# Director Board
+# HyperFrames Director Board: TraceWarden SIFT Recorded Demo
 
-Final combined video: `pitch/recording/pitch-demo-combined-final.mp4`
+| Scene | Judge belief | Screen action | Proof surface | Treatment | QA frame |
+| --- | --- | --- | --- | --- | --- |
+| `01-hook` | Repo command, receipts, reports, tests. | Prove 17 DFIR claims in a live run. | hero | Screen recording + component-lift/proof-montage cues | `pitch/polish-combined/qa/video-qa-01.png` |
+| `02-command` | PYTHONPATH=src python3 -m tracewarden run examples/evidence/case-alpha --out runs/demo-video | One command starts the case. | command | Screen recording + component-lift/proof-montage cues | `pitch/polish-combined/qa/video-qa-02.png` |
+| `03-live-run` | Actual stdout captured from the CLI. | The recorded run evaluates 17 claims. | stdout | Screen recording + component-lift/proof-montage cues | `pitch/polish-combined/qa/video-qa-03.png` |
+| `04-revocation` | Signed updater path, no corroboration. | CLAIM-004 gets revoked. | claim004 | Screen recording + component-lift/proof-montage cues | `pitch/polish-combined/qa/video-qa-04.png` |
+| `05-reroute` | PowerShell and network parsers support the replacement claim. | TraceWarden follows stronger evidence. | claim009 | Screen recording + component-lift/proof-montage cues | `pitch/polish-combined/qa/video-qa-05.png` |
+| `06-receipt` | File, line, parser, hash, tool calls. | Judges can inspect every field. | receiptFields | Screen recording + component-lift/proof-montage cues | `pitch/polish-combined/qa/video-qa-06.png` |
+| `07-accuracy` | 16 confirmed, 1 revoked, 0 hallucinations. | The report scores the run against ground truth. | accuracy | Screen recording + component-lift/proof-montage cues | `pitch/polish-combined/qa/video-qa-07.png` |
+| `08-tests` | Path escape, report writing, schema safety, weak claim revocation. | The guardrails are tested. | tests | Screen recording + component-lift/proof-montage cues | `pitch/polish-combined/qa/video-qa-08.png` |
+| `09-architecture` | Sealed evidence, typed tools, verifier state, receipts. | The safety boundary sits below the planner. | architecture | Screen recording + component-lift/proof-montage cues | `pitch/polish-combined/qa/video-qa-09.png` |
+| `10-close` | Repo, case, reports, deck, video source, tests. | Run it, inspect it, extend it. | close | Screen recording + component-lift/proof-montage cues | `pitch/polish-combined/qa/video-qa-10.png` |
 
-Runtime target: 81 seconds, under the 5 minute Devpost ceiling.
-
-## Scene Beliefs
-
-| Scene | Judge belief | Proof surface | Treatment |
-|---|---|---|---|
-| `01-cold-open` | Prove 17 DFIR claims in 90 seconds. | TraceWarden SIFT | cold plate + narration |
-| `02-risk` | A false lead creates a second incident. | Why this matters | risk plate + narration |
-| `03-terminal-run` | One terminal command runs the case. | Live terminal execution | terminal plate + narration |
-| `04-correction` | CLAIM-004 is revoked. | Self-correction sequence | correction plate + narration |
-| `05-receipts` | Surviving claims point to evidence. | Audit trail | receipts plate + narration |
-| `06-accuracy` | The run is scored against ground truth. | Accuracy report | accuracy plate + narration |
-| `07-architecture` | The guardrail sits below the planner. | Architecture | architecture plate + narration |
-| `08-close` | Run it, inspect it, extend it. | Submission package | close plate + narration |
-
-## Motion And Audio Plan
-
-- Motion: component-lift proof moments, artifact-stack-3d receipt stack, proof-montage accuracy close, shared-object CLAIM-004 handoff, architecture-reveal pipeline, per-scene plate zoom, fade transitions.
-- Audio: Mimo Chloe narration, HackathonHunter rights-cleared BGM, sidechain ducking, loudnorm.
-- Subtitles: baked into the visual plates; SRT is saved at `pitch/polish-combined/assets/captions.srt`.
-- QA frames: `pitch/polish-combined/qa/video-qa-*.png`.
+The final video records a browser demo surface with actual CLI output from `runs/demo-video`. Mimo owns the voice track. The right-side narration panel makes the voiceover visible for silent review, and the final MP4 also carries the mixed audio track.

@@ -1,0 +1,1 @@
+The receipt is inspectable. It lists file, line, parser, hash, and the tool calls behind the finding.

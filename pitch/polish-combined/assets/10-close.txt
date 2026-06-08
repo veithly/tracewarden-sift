@@ -1,0 +1,1 @@
+The repo includes the case, reports, deck, video source, and tests. Run it, inspect CLAIM zero zero four, then add the next SIFT parser.

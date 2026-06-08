@@ -1,0 +1,1 @@
+The agent seals the evidence root, calls read-only parsers, evaluates seventeen claims, and writes the reports. This is the stdout from the run.
