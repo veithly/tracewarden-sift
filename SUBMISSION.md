@@ -1,6 +1,6 @@
 # FIND EVIL Submission: TraceWarden SIFT
 
-> Paste-ready Devpost field map. Replace the external URL placeholders before final submit.
+> Paste-ready Devpost field map. External URLs are current as of June 8, 2026.
 
 ## Platform
 
@@ -121,7 +121,7 @@ TraceWarden proves depth on one log/timeline case. It does not cover the full SI
 ## Required External Links Before Final Devpost Submit
 
 - Repository URL: `https://github.com/veithly/tracewarden-sift`
-- Demo video URL: `https://www.youtube.com/watch?v=WQ51-db0OoE`
+- Demo video URL: `https://www.youtube.com/watch?v=IM85o2Z0guM`
 - Optional public deck URL: `https://github.com/veithly/tracewarden-sift/blob/main/pitch/deck/tracewarden-sift-deck.pdf`
 - Live URL: use local run instructions unless a hosted URL is added
 
@@ -137,7 +137,7 @@ TraceWarden proves depth on one log/timeline case. It does not cover the full SI
 - `pitch/recording/demo.mp4`
 - `pitch/recording/trailer.gif`
 
-The final MP4 is 81.404 seconds at 1920x1080, H.264/AAC, 30 fps, with narration, background music, baked captions, terminal execution, `CLAIM-004` self-correction, receipts, accuracy, tests, and architecture.
+The final MP4 is 81.16 seconds at 1920x1080, H.264/AAC, 30 fps, with Mimo narration, background music, baked captions, terminal execution, `CLAIM-004` self-correction, receipts, accuracy, tests, and architecture.
 
 ## Team Members
 

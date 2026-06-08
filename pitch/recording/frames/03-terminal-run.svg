@@ -20,19 +20,19 @@
 <text x="78" y="244.48000000000002" font-family="Inter, Helvetica, Arial, sans-serif" font-size="62" font-weight="850" fill="#eff8f7">case.</text>
   
   
-      <rect x="108" y="324" width="1456" height="620" rx="18" fill="#071015" stroke="#2e4350" stroke-width="2" filter="url(#shadow)"/>
-      <rect x="108" y="324" width="1456" height="58" rx="18" fill="#15242b"/>
-      <text x="154" y="362" font-family="Menlo, Consolas, monospace" font-size="22" fill="#a9bdc2">local terminal · repo root</text>
-      <text x="154" y="442" font-family="Menlo, Consolas, monospace" font-size="24" fill="#eff8f7">$ PYTHONPATH=src python3 -m tracewarden run examples/evidence/case-alpha --out runs/demo</text>
-<text x="154" y="481" font-family="Menlo, Consolas, monospace" font-size="24" fill="#45d4c8">[seal] evidence root locked</text>
-<text x="154" y="520" font-family="Menlo, Consolas, monospace" font-size="24" fill="#a9bdc2">[plan] collect timeline, auth, powershell, registry, network evidence</text>
-<text x="154" y="559" font-family="Menlo, Consolas, monospace" font-size="24" fill="#45d4c8">[tool] typed read-only parsers completed</text>
-<text x="154" y="598" font-family="Menlo, Consolas, monospace" font-size="24" fill="#f2b760">[verify] claims evaluated: 17</text>
-<text x="154" y="637" font-family="Menlo, Consolas, monospace" font-size="24" fill="#ff6a66">[correct] CLAIM-004 revoked; rerouted into powershell + network evidence</text>
-<text x="154" y="676" font-family="Menlo, Consolas, monospace" font-size="24" fill="#75d38a">[write] claim receipts: runs/demo/claim_receipts.json</text>
-<text x="154" y="715" font-family="Menlo, Consolas, monospace" font-size="24" fill="#75d38a">[write] accuracy report: runs/demo/accuracy_report.md</text>
-<text x="154" y="754" font-family="Menlo, Consolas, monospace" font-size="24" fill="#75d38a">[write] incident report: runs/demo/incident_report.html</text>
-<text x="154" y="793" font-family="Menlo, Consolas, monospace" font-size="24" fill="#f2b760">{&quot;accuracy&quot;:{&quot;confirmed&quot;:16,&quot;precision&quot;:1.0,&quot;recall&quot;:1.0,&quot;revoked&quot;:1,&quot;hallucinated_claim_ids&quot;:[]}}</text>
+      <rect x="98" y="300" width="1488" height="590" rx="18" fill="#071015" stroke="#2e4350" stroke-width="2" filter="url(#shadow)"/>
+      <rect x="98" y="300" width="1488" height="58" rx="18" fill="#15242b"/>
+      <text x="144" y="338" font-family="Menlo, Consolas, monospace" font-size="22" fill="#a9bdc2">local terminal · repo root</text>
+      <text x="144" y="418" font-family="Menlo, Consolas, monospace" font-size="21" fill="#eff8f7">$ PYTHONPATH=src python3 -m tracewarden run examples/evidence/case-alpha --out runs/demo</text>
+<text x="144" y="454" font-family="Menlo, Consolas, monospace" font-size="21" fill="#45d4c8">[seal] evidence root locked</text>
+<text x="144" y="490" font-family="Menlo, Consolas, monospace" font-size="21" fill="#a9bdc2">[plan] collect timeline, auth, powershell, registry, network evidence</text>
+<text x="144" y="526" font-family="Menlo, Consolas, monospace" font-size="21" fill="#45d4c8">[tool] typed read-only parsers completed</text>
+<text x="144" y="562" font-family="Menlo, Consolas, monospace" font-size="21" fill="#f2b760">[verify] claims evaluated: 17</text>
+<text x="144" y="598" font-family="Menlo, Consolas, monospace" font-size="21" fill="#ff6a66">[correct] CLAIM-004 revoked; rerouted into powershell + network evidence</text>
+<text x="144" y="634" font-family="Menlo, Consolas, monospace" font-size="21" fill="#75d38a">[write] claim receipts: runs/demo/claim_receipts.json</text>
+<text x="144" y="670" font-family="Menlo, Consolas, monospace" font-size="21" fill="#75d38a">[write] accuracy report: runs/demo/accuracy_report.md</text>
+<text x="144" y="706" font-family="Menlo, Consolas, monospace" font-size="21" fill="#75d38a">[write] incident report: runs/demo/incident_report.html</text>
+<text x="144" y="742" font-family="Menlo, Consolas, monospace" font-size="21" fill="#f2b760">{&quot;accuracy&quot;: {&quot;confirmed&quot;: 16, &quot;revoked&quot;: 1, &quot;hallucinations&quot;: 0}}</text>
       <g>
         <rect x="1600" y="410" width="220" height="220" rx="110" fill="#45d4c8" opacity="0.12"/>
         <text x="1652" y="526" font-family="Inter, Helvetica, Arial, sans-serif" font-size="58" font-weight="850" fill="#45d4c8">17</text>
@@ -40,7 +40,8 @@
       </g>
   
   <g>
-    <rect x="78" y="938" width="1764" height="100" rx="16" fill="#050c12" opacity="0.78" stroke="#2e4350" stroke-width="2"/>
-    <text x="112" y="982" font-family="Inter, Helvetica, Arial, sans-serif" font-size="27" font-weight="750" fill="#eff8f7">Seal evidence, call typed tools, evaluate 17 claims.</text>
+    <rect x="96" y="930" width="1500" height="98" rx="16" fill="#050c12" opacity="0.82" stroke="#2e4350" stroke-width="2"/>
+    <text x="132" y="974" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" font-weight="750" fill="#eff8f7">Seal evidence, call typed tools, evaluate 17</text>
+<text x="132" y="1002" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" font-weight="750" fill="#eff8f7">claims.</text>
   </g>
 </svg>

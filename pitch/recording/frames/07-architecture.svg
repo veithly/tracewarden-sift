@@ -58,8 +58,8 @@
       <text x="318" y="832" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" fill="#eff8f7">The LLM planner can change. The evidence contract stays deterministic.</text>
   
   <g>
-    <rect x="78" y="938" width="1764" height="100" rx="16" fill="#050c12" opacity="0.78" stroke="#2e4350" stroke-width="2"/>
-    <text x="112" y="982" font-family="Inter, Helvetica, Arial, sans-serif" font-size="27" font-weight="750" fill="#eff8f7">The planner can change. The verifier contract stays</text>
-<text x="112" y="1012.24" font-family="Inter, Helvetica, Arial, sans-serif" font-size="27" font-weight="750" fill="#eff8f7">deterministic.</text>
+    <rect x="96" y="930" width="1500" height="98" rx="16" fill="#050c12" opacity="0.82" stroke="#2e4350" stroke-width="2"/>
+    <text x="132" y="974" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" font-weight="750" fill="#eff8f7">The planner can change. The verifier contract</text>
+<text x="132" y="1002" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" font-weight="750" fill="#eff8f7">stays deterministic.</text>
   </g>
 </svg>

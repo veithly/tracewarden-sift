@@ -3,62 +3,62 @@
   "project": "TraceWarden SIFT",
   "hero": "Prove 17 DFIR claims in 90 seconds.",
   "target_duration_seconds": 81,
-  "voice": "macOS:say:Samantha",
+  "voice": "mimo:mimo-v2.5-tts:Chloe",
   "scenes": [
     {
       "id": "01-cold-open",
-      "duration": 7.79,
+      "duration": 8.43,
       "screen_action": "TraceWarden SIFT",
-      "narration": "TraceWarden SIFT proves seventeen D F I R claims in ninety seconds. Every finding needs a receipt before it survives.",
+      "narration": "TraceWarden SIFT proves seventeen DFIR claims in ninety seconds. The agent has to earn a receipt for each finding.",
       "proof": "Prove 17 DFIR claims in 90 seconds."
     },
     {
       "id": "02-risk",
-      "duration": 9.56,
+      "duration": 10.03,
       "screen_action": "Why this matters",
-      "narration": "A defender agent that cannot prove its claims burns responder time. The demo starts with a plausible updater lead, then forces that claim to earn support.",
+      "narration": "A defender agent can sound confident and still waste the responder's hour. This run starts with a plausible updater lead and makes it prove support.",
       "proof": "A false lead creates a second incident."
     },
     {
       "id": "03-terminal-run",
       "duration": 10.03,
       "screen_action": "Live terminal execution",
-      "narration": "Here is the live terminal path. The agent seals the evidence root, calls typed read only parsers, evaluates seventeen claims, and writes the reports.",
+      "narration": "Here is the run. TraceWarden seals the evidence root, calls read-only parsers, evaluates seventeen claims, and writes the reports.",
       "proof": "One terminal command runs the case."
     },
     {
       "id": "04-correction",
-      "duration": 10.57,
+      "duration": 12.11,
       "screen_action": "Self-correction sequence",
-      "narration": "The updater process looked suspicious at first. The verifier found a signed vendor path and no second source, so TraceWarden revoked CLAIM zero zero four and rerouted.",
+      "narration": "The updater process looks suspicious at first. The verifier finds a signed vendor path and no second source, so TraceWarden revokes claim zero zero four and reroutes.",
       "proof": "CLAIM-004 is revoked."
     },
     {
       "id": "05-receipts",
-      "duration": 11.77,
+      "duration": 9.55,
       "screen_action": "Audit trail",
-      "narration": "The replacement path is receipt backed. CLAIM zero zero nine ties PowerShell to network evidence, with file names, line numbers, parser names, hashes, and tool calls.",
+      "narration": "The replacement path has receipts. Claim zero zero nine ties PowerShell to network evidence with file names, line numbers, hashes, and tool calls.",
       "proof": "Surviving claims point to evidence."
     },
     {
       "id": "06-accuracy",
-      "duration": 10.98,
+      "duration": 8.43,
       "screen_action": "Accuracy report",
-      "narration": "The package measures truth instead of trusting the agent. Sixteen claims are confirmed, one is revoked, precision and recall are one point zero, and hallucinations are zero.",
+      "narration": "The scorer checks the run against ground truth. It confirms sixteen claims, revokes one, and reports zero hallucinations.",
       "proof": "The run is scored against ground truth."
     },
     {
       "id": "07-architecture",
-      "duration": 10.85,
+      "duration": 11.47,
       "screen_action": "Architecture",
-      "narration": "The planner can be an L L M, but the safety boundary is deterministic. Evidence is sealed, tools are read only, the verifier owns claim state, and receipts are replayable.",
+      "narration": "An LLM can plan the next step. The safety boundary stays deterministic: sealed evidence, read-only tools, verifier-owned claim state, and replayable receipts.",
       "proof": "The guardrail sits below the planner."
     },
     {
       "id": "08-close",
-      "duration": 9.85,
+      "duration": 10.99,
       "screen_action": "Submission package",
-      "narration": "Everything in the video is reproducible from the repo. Run the command, open the receipts, and add the next SIFT parser family to the same verifier contract.",
+      "narration": "The repo includes the case, receipts, reports, tests, deck, and video source. Run the command, inspect claim zero zero four, then add the next SIFT parser.",
       "proof": "Run it, inspect it, extend it."
     }
   ]

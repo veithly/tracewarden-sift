@@ -20,6 +20,6 @@ Runtime target: 81 seconds, under the 5 minute Devpost ceiling.
 ## Motion And Audio Plan
 
 - Motion: component-lift proof moments, artifact-stack-3d receipt stack, proof-montage accuracy close, shared-object CLAIM-004 handoff, architecture-reveal pipeline, per-scene plate zoom, fade transitions.
-- Audio: macOS Samantha narration, HackathonHunter rights-cleared BGM, sidechain ducking, loudnorm.
+- Audio: Mimo Chloe narration, HackathonHunter rights-cleared BGM, sidechain ducking, loudnorm.
 - Subtitles: baked into the visual plates; SRT is saved at `pitch/polish-combined/assets/captions.srt`.
 - QA frames: `pitch/polish-combined/qa/video-qa-*.png`.

@@ -34,7 +34,7 @@
       <text x="1210" y="698" font-family="Menlo, Consolas, monospace" font-size="29" fill="#75d38a">confirmed -> claim_receipts.json</text>
   
   <g>
-    <rect x="78" y="938" width="1764" height="100" rx="16" fill="#050c12" opacity="0.78" stroke="#2e4350" stroke-width="2"/>
-    <text x="112" y="982" font-family="Inter, Helvetica, Arial, sans-serif" font-size="27" font-weight="750" fill="#eff8f7">A plausible claim must earn support.</text>
+    <rect x="96" y="930" width="1500" height="98" rx="16" fill="#050c12" opacity="0.82" stroke="#2e4350" stroke-width="2"/>
+    <text x="132" y="974" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" font-weight="750" fill="#eff8f7">A weak lead costs analyst time.</text>
   </g>
 </svg>

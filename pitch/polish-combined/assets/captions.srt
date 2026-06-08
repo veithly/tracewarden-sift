@@ -1,39 +1,39 @@
 1
-00:00:00,000 --> 00:00:07,536
-TraceWarden SIFT proves seventeen D F I R claims in
-ninety seconds. Every finding needs a receipt before
+00:00:00,000 --> 00:00:08,180
+TraceWarden SIFT proves seventeen DFIR claims in
+ninety seconds. The agent has to earn a receipt for
 
 2
-00:00:07,786 --> 00:00:17,095
-A defender agent that cannot prove its claims burns
-responder time. The demo starts with a plausible
+00:00:08,430 --> 00:00:18,210
+A defender agent can sound confident and still waste
+the responder's hour. This run starts with a plausible
 
 3
-00:00:17,345 --> 00:00:27,128
-Here is the live terminal path. The agent seals the
-evidence root, calls typed read only parsers,
+00:00:18,460 --> 00:00:28,240
+Here is the run. TraceWarden seals the evidence root,
+calls read-only parsers, evaluates seventeen claims,
 
 4
-00:00:27,378 --> 00:00:37,699
-The updater process looked suspicious at first. The
-verifier found a signed vendor path and no second
+00:00:28,490 --> 00:00:40,350
+The updater process looks suspicious at first. The
+verifier finds a signed vendor path and no second
 
 5
-00:00:37,949 --> 00:00:49,467
-The replacement path is receipt backed. CLAIM zero
-zero nine ties PowerShell to network evidence, with
+00:00:40,600 --> 00:00:49,900
+The replacement path has receipts. Claim zero zero
+nine ties PowerShell to network evidence with file
 
 6
-00:00:49,717 --> 00:01:00,446
-The package measures truth instead of trusting the
-agent. Sixteen claims are confirmed, one is revoked,
+00:00:50,150 --> 00:00:58,330
+The scorer checks the run against ground truth. It
+confirms sixteen claims, revokes one, and reports zero
 
 7
-00:01:00,696 --> 00:01:11,297
-The planner can be an L L M, but the safety boundary
-is deterministic. Evidence is sealed, tools are read
+00:00:58,580 --> 00:01:09,800
+An LLM can plan the next step. The safety boundary
+stays deterministic: sealed evidence, read-only tools,
 
 8
-00:01:11,547 --> 00:01:21,146
-Everything in the video is reproducible from the repo.
-Run the command, open the receipts, and add the next
+00:01:10,050 --> 00:01:20,790
+The repo includes the case, receipts, reports, tests,
+deck, and video source. Run the command, inspect claim

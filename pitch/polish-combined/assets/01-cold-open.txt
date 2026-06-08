@@ -1,1 +1,1 @@
-TraceWarden SIFT proves seventeen D F I R claims in ninety seconds. Every finding needs a receipt before it survives.
+TraceWarden SIFT proves seventeen DFIR claims in ninety seconds. The agent has to earn a receipt for each finding.

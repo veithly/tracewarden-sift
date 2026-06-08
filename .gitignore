@@ -20,3 +20,4 @@ pitch/polish-combined/assets/*.mp3
 test-results/
 playwright-report/
 *.trace.zip
+pitch/devpost-recaptcha-blocker*.png

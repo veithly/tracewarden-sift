@@ -1,1 +1,1 @@
-The planner can be an L L M, but the safety boundary is deterministic. Evidence is sealed, tools are read only, the verifier owns claim state, and receipts are replayable.
+An LLM can plan the next step. The safety boundary stays deterministic: sealed evidence, read-only tools, verifier-owned claim state, and replayable receipts.

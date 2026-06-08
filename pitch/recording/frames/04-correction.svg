@@ -30,18 +30,19 @@
   <g>
     <rect x="1110" y="416" width="560" height="138" rx="18" fill="#111b23" stroke="#ff6a66" stroke-width="2" filter="url(#shadow)"/>
     <text x="1140" y="464" font-family="Menlo, Consolas, monospace" font-size="26" font-weight="800" fill="#ff6a66">CLAIM-004 · REVOKED</text>
-    <text x="1140" y="508" font-family="Inter, Helvetica, Arial, sans-serif" font-size="23" fill="#eff8f7">signed vendor path, no corroboration</text>
+    <text x="1140" y="504" font-family="Inter, Helvetica, Arial, sans-serif" font-size="21" font-weight="500" fill="#eff8f7">signed vendor path, no</text>
+<text x="1140" y="528.36" font-family="Inter, Helvetica, Arial, sans-serif" font-size="21" font-weight="500" fill="#eff8f7">corroboration</text>
   </g>
       
   <g>
     <rect x="1190" y="608" width="560" height="138" rx="18" fill="#111b23" stroke="#45d4c8" stroke-width="2" filter="url(#shadow)"/>
     <text x="1220" y="656" font-family="Menlo, Consolas, monospace" font-size="26" font-weight="800" fill="#45d4c8">NEXT STEP · REROUTE</text>
-    <text x="1220" y="700" font-family="Inter, Helvetica, Arial, sans-serif" font-size="23" fill="#eff8f7">PowerShell + network parsers</text>
+    <text x="1220" y="696" font-family="Inter, Helvetica, Arial, sans-serif" font-size="21" font-weight="500" fill="#eff8f7">PowerShell + network parsers</text>
   </g>
       <text x="104" y="852" font-family="Inter, Helvetica, Arial, sans-serif" font-size="29" fill="#eff8f7">The correction is logged in execution_log.jsonl and reflected in claim_receipts.json.</text>
   
   <g>
-    <rect x="78" y="938" width="1764" height="100" rx="16" fill="#050c12" opacity="0.78" stroke="#2e4350" stroke-width="2"/>
-    <text x="112" y="982" font-family="Inter, Helvetica, Arial, sans-serif" font-size="27" font-weight="750" fill="#eff8f7">CLAIM-004 loses support and gets revoked.</text>
+    <rect x="96" y="930" width="1500" height="98" rx="16" fill="#050c12" opacity="0.82" stroke="#2e4350" stroke-width="2"/>
+    <text x="132" y="974" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" font-weight="750" fill="#eff8f7">CLAIM-004 fails the verifier.</text>
   </g>
 </svg>

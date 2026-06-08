@@ -1,1 +1,1 @@
-The updater process looked suspicious at first. The verifier found a signed vendor path and no second source, so TraceWarden revoked CLAIM zero zero four and rerouted.
+The updater process looks suspicious at first. The verifier finds a signed vendor path and no second source, so TraceWarden revokes claim zero zero four and reroutes.

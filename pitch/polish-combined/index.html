@@ -9,7 +9,7 @@
     [data-composition-id="root"] { width: 1920px; min-height: 1080px; background: #081016; }
     .scene { width: 1920px; height: 1080px; position: relative; overflow: hidden; border-bottom: 2px solid #2e4350; }
     .scene img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .scene p { position: absolute; left: 80px; right: 80px; bottom: 34px; margin: 0; padding: 18px 24px; background: rgba(5, 12, 18, .78); border: 1px solid #2e4350; border-radius: 12px; font-size: 30px; line-height: 1.25; }
+    .scene p { position: absolute; left: 96px; bottom: 52px; width: 1450px; min-height: 42px; margin: 0; padding: 18px 24px; background: rgba(5, 12, 18, .82); border: 1px solid #2e4350; border-radius: 12px; font-size: 26px; line-height: 1.2; box-sizing: border-box; overflow-wrap: anywhere; }
     .artifact-stack-3d { transform-style: preserve-3d; perspective: 1200px; }
     .proof-montage { transform: rotateY(-6deg) translateZ(18px); }
     .component-lift { transform: scale(1.04); }
@@ -21,44 +21,44 @@
   <main data-composition-id="root" data-width="1920" data-height="1080">
     <!-- HyperFrames treatment cues: artifact-stack-3d, proof-montage, component-lift, shared-object, architecture-reveal, perspective, preserve-3d. -->
     
-      <section class="scene" data-scene="01-cold-open" data-duration="7.79">
+      <section class="scene" data-scene="01-cold-open" data-duration="8.43">
         <img src="../recording/frames/01-cold-open.png" alt="Prove 17 DFIR claims in 90 seconds.">
-        <p>TraceWarden SIFT proves seventeen D F I R claims in ninety seconds. Every finding needs a receipt before it survives.</p>
+        <p>Every finding earns a receipt.</p>
       </section>
 
-      <section class="scene" data-scene="02-risk" data-duration="9.56">
+      <section class="scene" data-scene="02-risk" data-duration="10.03">
         <img src="../recording/frames/02-risk.png" alt="A false lead creates a second incident.">
-        <p>A defender agent that cannot prove its claims burns responder time. The demo starts with a plausible updater lead, then forces that claim to earn support.</p>
+        <p>A weak lead costs analyst time.</p>
       </section>
 
       <section class="scene" data-scene="03-terminal-run" data-duration="10.03">
         <img src="../recording/frames/03-terminal-run.png" alt="One terminal command runs the case.">
-        <p>Here is the live terminal path. The agent seals the evidence root, calls typed read only parsers, evaluates seventeen claims, and writes the reports.</p>
+        <p>Seal evidence, call typed tools, evaluate 17 claims.</p>
       </section>
 
-      <section class="scene" data-scene="04-correction" data-duration="10.57">
+      <section class="scene" data-scene="04-correction" data-duration="12.11">
         <img src="../recording/frames/04-correction.png" alt="CLAIM-004 is revoked.">
-        <p>The updater process looked suspicious at first. The verifier found a signed vendor path and no second source, so TraceWarden revoked CLAIM zero zero four and rerouted.</p>
+        <p>CLAIM-004 fails the verifier.</p>
       </section>
 
-      <section class="scene" data-scene="05-receipts" data-duration="11.77">
+      <section class="scene" data-scene="05-receipts" data-duration="9.55">
         <img src="../recording/frames/05-receipts.png" alt="Surviving claims point to evidence.">
-        <p>The replacement path is receipt backed. CLAIM zero zero nine ties PowerShell to network evidence, with file names, line numbers, parser names, hashes, and tool calls.</p>
+        <p>Receipts point to files and tool calls.</p>
       </section>
 
-      <section class="scene" data-scene="06-accuracy" data-duration="10.98">
+      <section class="scene" data-scene="06-accuracy" data-duration="8.43">
         <img src="../recording/frames/06-accuracy.png" alt="The run is scored against ground truth.">
-        <p>The package measures truth instead of trusting the agent. Sixteen claims are confirmed, one is revoked, precision and recall are one point zero, and hallucinations are zero.</p>
+        <p>16 confirmed, 1 revoked, 0 hallucinations.</p>
       </section>
 
-      <section class="scene" data-scene="07-architecture" data-duration="10.85">
+      <section class="scene" data-scene="07-architecture" data-duration="11.47">
         <img src="../recording/frames/07-architecture.png" alt="The guardrail sits below the planner.">
-        <p>The planner can be an L L M, but the safety boundary is deterministic. Evidence is sealed, tools are read only, the verifier owns claim state, and receipts are replayable.</p>
+        <p>The planner can change. The verifier contract stays deterministic.</p>
       </section>
 
-      <section class="scene" data-scene="08-close" data-duration="9.85">
+      <section class="scene" data-scene="08-close" data-duration="10.99">
         <img src="../recording/frames/08-close.png" alt="Run it, inspect it, extend it.">
-        <p>Everything in the video is reproducible from the repo. Run the command, open the receipts, and add the next SIFT parser family to the same verifier contract.</p>
+        <p>Run the command, open the receipts, extend the parser set.</p>
       </section>
   </main>
 </body>

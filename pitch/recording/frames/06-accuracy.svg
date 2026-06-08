@@ -23,33 +23,33 @@
       <g transform="translate(104 390)">
         
   <g>
-    <rect x="0" y="0" width="260" height="136" rx="18" fill="#111b23" stroke="#2e4350" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="260" height="150" rx="18" fill="#111b23" stroke="#2e4350" stroke-width="2" filter="url(#shadow)"/>
     <text x="28" y="58" font-family="Inter, Helvetica, Arial, sans-serif" font-size="45" font-weight="850" fill="#45d4c8">17</text>
-    <text x="28" y="98" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" fill="#a9bdc2">claims evaluated</text>
+    <text x="28" y="100" font-family="Inter, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#a9bdc2">claims evaluated</text>
   </g>
         
   <g>
-    <rect x="300" y="0" width="260" height="136" rx="18" fill="#111b23" stroke="#2e4350" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="300" y="0" width="260" height="150" rx="18" fill="#111b23" stroke="#2e4350" stroke-width="2" filter="url(#shadow)"/>
     <text x="328" y="58" font-family="Inter, Helvetica, Arial, sans-serif" font-size="45" font-weight="850" fill="#75d38a">16</text>
-    <text x="328" y="98" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" fill="#a9bdc2">confirmed</text>
+    <text x="328" y="100" font-family="Inter, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#a9bdc2">confirmed</text>
   </g>
         
   <g>
-    <rect x="600" y="0" width="260" height="136" rx="18" fill="#111b23" stroke="#2e4350" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="600" y="0" width="260" height="150" rx="18" fill="#111b23" stroke="#2e4350" stroke-width="2" filter="url(#shadow)"/>
     <text x="628" y="58" font-family="Inter, Helvetica, Arial, sans-serif" font-size="45" font-weight="850" fill="#ff6a66">1</text>
-    <text x="628" y="98" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" fill="#a9bdc2">revoked</text>
+    <text x="628" y="100" font-family="Inter, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#a9bdc2">revoked</text>
   </g>
         
   <g>
-    <rect x="900" y="0" width="260" height="136" rx="18" fill="#111b23" stroke="#2e4350" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="900" y="0" width="260" height="150" rx="18" fill="#111b23" stroke="#2e4350" stroke-width="2" filter="url(#shadow)"/>
     <text x="928" y="58" font-family="Inter, Helvetica, Arial, sans-serif" font-size="45" font-weight="850" fill="#f2b760">0</text>
-    <text x="928" y="98" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" fill="#a9bdc2">hallucinations</text>
+    <text x="928" y="100" font-family="Inter, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#a9bdc2">hallucinations</text>
   </g>
         
   <g>
-    <rect x="1200" y="0" width="260" height="136" rx="18" fill="#111b23" stroke="#2e4350" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="1200" y="0" width="260" height="150" rx="18" fill="#111b23" stroke="#2e4350" stroke-width="2" filter="url(#shadow)"/>
     <text x="1228" y="58" font-family="Inter, Helvetica, Arial, sans-serif" font-size="45" font-weight="850" fill="#75d38a">1.0</text>
-    <text x="1228" y="98" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" fill="#a9bdc2">precision / recall</text>
+    <text x="1228" y="100" font-family="Inter, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#a9bdc2">precision / recall</text>
   </g>
       </g>
       <rect x="110" y="620" width="800" height="260" rx="18" fill="#071015" stroke="#2e4350" stroke-width="2" filter="url(#shadow)"/>
@@ -68,7 +68,7 @@
 <text x="1032" y="905" font-family="Menlo, Consolas, monospace" font-size="22" fill="#75d38a">OK</text>
   
   <g>
-    <rect x="78" y="938" width="1764" height="100" rx="16" fill="#050c12" opacity="0.78" stroke="#2e4350" stroke-width="2"/>
-    <text x="112" y="982" font-family="Inter, Helvetica, Arial, sans-serif" font-size="27" font-weight="750" fill="#eff8f7">16 confirmed, 1 revoked, 0 hallucinations.</text>
+    <rect x="96" y="930" width="1500" height="98" rx="16" fill="#050c12" opacity="0.82" stroke="#2e4350" stroke-width="2"/>
+    <text x="132" y="974" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" font-weight="750" fill="#eff8f7">16 confirmed, 1 revoked, 0 hallucinations.</text>
   </g>
 </svg>

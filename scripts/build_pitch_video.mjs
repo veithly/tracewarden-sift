@@ -1,11 +1,31 @@
 #!/usr/bin/env node
 
 import fs from "node:fs/promises";
+import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { createRequire } from "node:module";
 import { spawnSync } from "node:child_process";
 
 const ROOT = process.cwd();
+function loadEnvFile(file) {
+  if (!existsSync(file)) return;
+  const text = readFileSync(file, "utf8");
+  for (const rawLine of text.split(/\r?\n/)) {
+    const line = rawLine.trim();
+    if (!line || line.startsWith("#") || !line.includes("=")) continue;
+    const idx = line.indexOf("=");
+    const key = line.slice(0, idx).trim();
+    let value = line.slice(idx + 1).trim();
+    if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
+      value = value.slice(1, -1);
+    }
+    if (key && process.env[key] === undefined) process.env[key] = value;
+  }
+}
+
+loadEnvFile(path.join(process.env.HOME || "", "use_key.txt"));
+loadEnvFile(path.join(ROOT, ".env.local"));
+
 const RUNTIME_NODE_MODULES = path.join(
   process.env.HOME || "",
   ".cache",
@@ -20,7 +40,6 @@ const sharp = requireFromRuntime("sharp");
 
 const FFMPEG = "/opt/homebrew/bin/ffmpeg";
 const FFPROBE = "/opt/homebrew/bin/ffprobe";
-const SAY = "/usr/bin/say";
 const W = 1920;
 const H = 1080;
 const FPS = 30;
@@ -39,6 +58,22 @@ const BGM = path.join(
   "music",
   "02_innovation_drive.mp3",
 );
+const TTS_PROVIDER = (process.env.TTS_PROVIDER || (process.env.MIMO_API_KEY ? "mimo" : "")).toLowerCase();
+const MIMO_API_KEY = process.env.TTS_API_KEY || process.env.MIMO_API_KEY;
+const MIMO_BASE_URL = (process.env.TTS_BASE_URL || process.env.MIMO_BASE_URL || "https://api.xiaomimimo.com/v1").replace(/\/+$/, "");
+const MIMO_MODEL = process.env.TTS_MODEL || process.env.MIMO_TTS_MODEL || "mimo-v2.5-tts";
+const MIMO_VOICE = process.env.TTS_VOICE || process.env.MIMO_TTS_VOICE || "Chloe";
+const TTS_FORMAT = (process.env.TTS_FORMAT || "wav").toLowerCase();
+const TTS_INSTRUCTION =
+  process.env.TTS_INSTRUCTION ||
+  "Plainspoken hackathon demo narration. Fast but clear. Warm, direct, native English pronunciation for TraceWarden, SIFT, DFIR, MCP, and claim IDs. Leave a short pause after metrics.";
+
+if (TTS_PROVIDER !== "mimo") {
+  throw new Error("Mimo TTS is required for this video. Set TTS_PROVIDER=mimo in ~/use_key.txt or .env.local.");
+}
+if (!MIMO_API_KEY) {
+  throw new Error("Mimo TTS key missing. Set TTS_API_KEY or MIMO_API_KEY in ~/use_key.txt or .env.local.");
+}
 
 const colors = {
   bg: "#081016",
@@ -64,7 +99,16 @@ const terminalOutput = [
   "[write] claim receipts: runs/demo/claim_receipts.json",
   "[write] accuracy report: runs/demo/accuracy_report.md",
   "[write] incident report: runs/demo/incident_report.html",
-  '{"accuracy":{"confirmed":16,"precision":1.0,"recall":1.0,"revoked":1,"hallucinated_claim_ids":[]}}',
+  '{"accuracy": {"confirmed": 16, "revoked": 1, "hallucinations": 0}}',
+];
+
+const terminalOutputShort = [
+  "$ tracewarden run case-alpha",
+  "[seal] evidence root locked",
+  "[tool] read-only parsers complete",
+  "[verify] claims evaluated: 17",
+  "[correct] CLAIM-004 revoked",
+  "[write] receipts + accuracy + report",
 ];
 
 const testOutput = [
@@ -81,18 +125,18 @@ const scenes = [
     id: "01-cold-open",
     title: "Prove 17 DFIR claims in 90 seconds.",
     label: "TraceWarden SIFT",
-    caption: "Every finding needs a receipt before it survives.",
+    caption: "Every finding earns a receipt.",
     narration:
-      "TraceWarden SIFT proves seventeen D F I R claims in ninety seconds. Every finding needs a receipt before it survives.",
+      "TraceWarden SIFT proves seventeen DFIR claims in ninety seconds. The agent has to earn a receipt for each finding.",
     kind: "cold",
   },
   {
     id: "02-risk",
     title: "A false lead creates a second incident.",
     label: "Why this matters",
-    caption: "A plausible claim must earn support.",
+    caption: "A weak lead costs analyst time.",
     narration:
-      "A defender agent that cannot prove its claims burns responder time. The demo starts with a plausible updater lead, then forces that claim to earn support.",
+      "A defender agent can sound confident and still waste the responder's hour. This run starts with a plausible updater lead and makes it prove support.",
     kind: "risk",
   },
   {
@@ -101,25 +145,25 @@ const scenes = [
     label: "Live terminal execution",
     caption: "Seal evidence, call typed tools, evaluate 17 claims.",
     narration:
-      "Here is the live terminal path. The agent seals the evidence root, calls typed read only parsers, evaluates seventeen claims, and writes the reports.",
+      "Here is the run. TraceWarden seals the evidence root, calls read-only parsers, evaluates seventeen claims, and writes the reports.",
     kind: "terminal",
   },
   {
     id: "04-correction",
     title: "CLAIM-004 is revoked.",
     label: "Self-correction sequence",
-    caption: "CLAIM-004 loses support and gets revoked.",
+    caption: "CLAIM-004 fails the verifier.",
     narration:
-      "The updater process looked suspicious at first. The verifier found a signed vendor path and no second source, so TraceWarden revoked CLAIM zero zero four and rerouted.",
+      "The updater process looks suspicious at first. The verifier finds a signed vendor path and no second source, so TraceWarden revokes claim zero zero four and reroutes.",
     kind: "correction",
   },
   {
     id: "05-receipts",
     title: "Surviving claims point to evidence.",
     label: "Audit trail",
-    caption: "Receipts bind findings to files, lines, hashes, and tool calls.",
+    caption: "Receipts point to files and tool calls.",
     narration:
-      "The replacement path is receipt backed. CLAIM zero zero nine ties PowerShell to network evidence, with file names, line numbers, parser names, hashes, and tool calls.",
+      "The replacement path has receipts. Claim zero zero nine ties PowerShell to network evidence with file names, line numbers, hashes, and tool calls.",
     kind: "receipts",
   },
   {
@@ -128,7 +172,7 @@ const scenes = [
     label: "Accuracy report",
     caption: "16 confirmed, 1 revoked, 0 hallucinations.",
     narration:
-      "The package measures truth instead of trusting the agent. Sixteen claims are confirmed, one is revoked, precision and recall are one point zero, and hallucinations are zero.",
+      "The scorer checks the run against ground truth. It confirms sixteen claims, revokes one, and reports zero hallucinations.",
     kind: "accuracy",
   },
   {
@@ -137,7 +181,7 @@ const scenes = [
     label: "Architecture",
     caption: "The planner can change. The verifier contract stays deterministic.",
     narration:
-      "The planner can be an L L M, but the safety boundary is deterministic. Evidence is sealed, tools are read only, the verifier owns claim state, and receipts are replayable.",
+      "An LLM can plan the next step. The safety boundary stays deterministic: sealed evidence, read-only tools, verifier-owned claim state, and replayable receipts.",
     kind: "architecture",
   },
   {
@@ -146,7 +190,7 @@ const scenes = [
     label: "Submission package",
     caption: "Run the command, open the receipts, extend the parser set.",
     narration:
-      "Everything in the video is reproducible from the repo. Run the command, open the receipts, and add the next SIFT parser family to the same verifier contract.",
+      "The repo includes the case, receipts, reports, tests, deck, and video source. Run the command, inspect claim zero zero four, then add the next SIFT parser.",
     kind: "close",
   },
 ];
@@ -184,6 +228,42 @@ function ffprobeDuration(file) {
   return Number.parseFloat(result.stdout.trim());
 }
 
+async function mimoTts(text, outFile) {
+  const endpoint = `${MIMO_BASE_URL}/chat/completions`;
+  for (let attempt = 0; attempt < 5; attempt += 1) {
+    const response = await fetch(endpoint, {
+      method: "POST",
+      headers: {
+        "api-key": MIMO_API_KEY,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        model: MIMO_MODEL,
+        messages: [
+          { role: "user", content: TTS_INSTRUCTION },
+          { role: "assistant", content: text },
+        ],
+        audio: {
+          format: TTS_FORMAT,
+          voice: MIMO_VOICE,
+        },
+      }),
+    });
+    const body = await response.text();
+    if (response.ok) {
+      const data = JSON.parse(body);
+      const audioData = data?.choices?.[0]?.message?.audio?.data;
+      if (!audioData) throw new Error("Mimo TTS response did not include choices[0].message.audio.data");
+      await fs.writeFile(outFile, Buffer.from(audioData, "base64"));
+      return;
+    }
+    if (attempt === 4) throw new Error(`Mimo TTS failed (${response.status}): ${body.slice(0, 500)}`);
+    const wait = (2 ** attempt) * 1000;
+    console.warn(`Mimo TTS retry in ${wait}ms: ${response.status}`);
+    await new Promise((resolve) => setTimeout(resolve, wait));
+  }
+}
+
 function esc(value) {
   return String(value)
     .replaceAll("&", "&amp;")
@@ -216,6 +296,10 @@ function textLines(lines, x, y, size, color, weight = 500, family = "Inter, Helv
       return `<text x="${x}" y="${yy}" font-family="${family}" font-size="${size}" font-weight="${weight}" fill="${color}">${esc(line)}</text>`;
     })
     .join("\n");
+}
+
+function wrappedText(text, x, y, size, color, maxChars, weight = 500, family = "Inter, Helvetica, Arial, sans-serif", gap = 1.16) {
+  return textLines(wrapWords(text, maxChars), x, y, size, color, weight, family, gap);
 }
 
 function shellRows(rows, x, y, size = 23) {
@@ -260,9 +344,9 @@ function card(x, y, w, h, stroke = colors.line, fill = colors.panel) {
 function stat(x, y, value, label, color) {
   return `
   <g>
-    ${card(x, y, 260, 136, colors.line)}
+    ${card(x, y, 260, 150, colors.line)}
     <text x="${x + 28}" y="${y + 58}" font-family="Inter, Helvetica, Arial, sans-serif" font-size="45" font-weight="850" fill="${color}">${esc(value)}</text>
-    <text x="${x + 28}" y="${y + 98}" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" fill="${colors.muted}">${esc(label)}</text>
+    ${wrappedText(label, x + 28, y + 100, 18, colors.muted, 18, 500, "Inter, Helvetica, Arial, sans-serif", 1.18)}
   </g>`;
 }
 
@@ -271,7 +355,7 @@ function receipt(x, y, id, status, detail, stroke) {
   <g>
     ${card(x, y, 560, 138, stroke)}
     <text x="${x + 30}" y="${y + 48}" font-family="Menlo, Consolas, monospace" font-size="26" font-weight="800" fill="${stroke}">${esc(id)} · ${esc(status)}</text>
-    <text x="${x + 30}" y="${y + 92}" font-family="Inter, Helvetica, Arial, sans-serif" font-size="23" fill="${colors.text}">${esc(detail)}</text>
+    ${wrappedText(detail, x + 30, y + 88, 21, colors.text, 34)}
   </g>`;
 }
 
@@ -290,7 +374,7 @@ function sceneBody(scene) {
       ${card(82, 390, 790, 420, colors.line, "#071015")}
       <rect x="82" y="390" width="790" height="54" rx="18" fill="#15242b"/>
       <circle cx="116" cy="418" r="8" fill="${colors.red}"/><circle cx="144" cy="418" r="8" fill="${colors.amber}"/><circle cx="172" cy="418" r="8" fill="${colors.green}"/>
-      ${shellRows(terminalOutput.slice(0, 7), 124, 500, 22)}
+      ${shellRows(terminalOutputShort, 124, 500, 23)}
       <g transform="translate(1030 350) rotate(-3)">
         ${receipt(0, 0, "CLAIM-004", "REVOKED", "weak updater lead stopped", colors.red)}
         ${receipt(42, 166, "CLAIM-009", "CONFIRMED", "PowerShell + network support", colors.green)}
@@ -314,10 +398,10 @@ function sceneBody(scene) {
   }
   if (scene.kind === "terminal") {
     return `
-      ${card(108, 324, 1456, 620, colors.line, "#071015")}
-      <rect x="108" y="324" width="1456" height="58" rx="18" fill="#15242b"/>
-      <text x="154" y="362" font-family="Menlo, Consolas, monospace" font-size="22" fill="${colors.muted}">local terminal · repo root</text>
-      ${shellRows(terminalOutput, 154, 442, 24)}
+      ${card(98, 300, 1488, 590, colors.line, "#071015")}
+      <rect x="98" y="300" width="1488" height="58" rx="18" fill="#15242b"/>
+      <text x="144" y="338" font-family="Menlo, Consolas, monospace" font-size="22" fill="${colors.muted}">local terminal · repo root</text>
+      ${shellRows(terminalOutput, 144, 418, 21)}
       <g>
         <rect x="1600" y="410" width="220" height="220" rx="110" fill="${colors.teal}" opacity="0.12"/>
         <text x="1652" y="526" font-family="Inter, Helvetica, Arial, sans-serif" font-size="58" font-weight="850" fill="${colors.teal}">17</text>
@@ -409,11 +493,11 @@ function sceneBody(scene) {
 }
 
 function subtitleOverlay(scene) {
-  const lines = wrapWords(scene.caption || scene.narration, 62);
+  const lines = wrapWords(scene.caption || scene.narration, 46).slice(0, 2);
   return `
   <g>
-    <rect x="78" y="938" width="1764" height="100" rx="16" fill="#050c12" opacity="0.78" stroke="${colors.line}" stroke-width="2"/>
-    ${textLines(lines, 112, 982, 27, colors.text, 750, "Inter, Helvetica, Arial, sans-serif", 1.12)}
+    <rect x="96" y="930" width="1500" height="98" rx="16" fill="#050c12" opacity="0.82" stroke="${colors.line}" stroke-width="2"/>
+    ${textLines(lines, 132, 974, 25, colors.text, 750, "Inter, Helvetica, Arial, sans-serif", 1.12)}
   </g>`;
 }
 
@@ -448,7 +532,7 @@ async function writeStoryHtml(durations) {
       return `
       <section class="scene" data-scene="${scene.id}" data-duration="${durations[idx].toFixed(2)}">
         <img src="${img}" alt="${esc(scene.title)}">
-        <p>${esc(scene.narration)}</p>
+        <p>${esc(scene.caption)}</p>
       </section>`;
     })
     .join("\n");
@@ -463,7 +547,7 @@ async function writeStoryHtml(durations) {
     [data-composition-id="root"] { width: 1920px; min-height: 1080px; background: ${colors.bg}; }
     .scene { width: 1920px; height: 1080px; position: relative; overflow: hidden; border-bottom: 2px solid ${colors.line}; }
     .scene img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .scene p { position: absolute; left: 80px; right: 80px; bottom: 34px; margin: 0; padding: 18px 24px; background: rgba(5, 12, 18, .78); border: 1px solid ${colors.line}; border-radius: 12px; font-size: 30px; line-height: 1.25; }
+    .scene p { position: absolute; left: 96px; bottom: 52px; width: 1450px; min-height: 42px; margin: 0; padding: 18px 24px; background: rgba(5, 12, 18, .82); border: 1px solid ${colors.line}; border-radius: 12px; font-size: 26px; line-height: 1.2; box-sizing: border-box; overflow-wrap: anywhere; }
     .artifact-stack-3d { transform-style: preserve-3d; perspective: 1200px; }
     .proof-montage { transform: rotateY(-6deg) translateZ(18px); }
     .component-lift { transform: scale(1.04); }
@@ -505,19 +589,19 @@ async function buildNarration() {
   const records = [];
   for (const scene of scenes) {
     const textPath = path.join(AUDIO, `${scene.id}.txt`);
-    const aiff = path.join(AUDIO, `${scene.id}.aiff`);
     const wav = path.join(AUDIO, `${scene.id}.wav`);
     const paddedWav = path.join(AUDIO, `${scene.id}.padded.wav`);
     const mp3 = path.join(AUDIO, `pitch-narration-${String(records.length + 1).padStart(2, "0")}.mp3`);
     await fs.writeFile(textPath, scene.narration, "utf8");
-    run(SAY, ["-v", "Samantha", "-r", "166", "-f", textPath, "-o", aiff]);
-    run(FFMPEG, ["-y", "-i", aiff, "-ar", "48000", "-ac", "2", wav]);
+    await mimoTts(scene.narration, wav);
+    const normalizedWav = path.join(AUDIO, `${scene.id}.normalized.wav`);
+    run(FFMPEG, ["-y", "-i", wav, "-ar", "48000", "-ac", "2", normalizedWav]);
     const voiceDuration = ffprobeDuration(wav);
     const duration = Math.max(voiceDuration + 0.75, 5.0);
     run(FFMPEG, [
       "-y",
       "-i",
-      wav,
+      normalizedWav,
       "-af",
       `apad=pad_dur=${Math.max(0, duration - voiceDuration).toFixed(3)},atrim=0:${duration.toFixed(3)}`,
       "-ar",
@@ -557,9 +641,10 @@ async function buildNarration() {
 
   await fs.writeFile(path.join(OUT, "cues.json"), `${JSON.stringify(cues, null, 2)}\n`, "utf8");
   await fs.writeFile(path.join(AUDIO, "captions.srt"), srt.join("\n"), "utf8");
+  const voiceLabel = `mimo:${MIMO_MODEL}:${MIMO_VOICE}`;
   await fs.writeFile(
     path.join(POLISH, "narration.json"),
-    `${JSON.stringify({ voice: "macOS:say:Samantha", first_sentence: scenes[0].narration, scenes: records }, null, 2)}\n`,
+    `${JSON.stringify({ voice: voiceLabel, first_sentence: scenes[0].narration, scenes: records }, null, 2)}\n`,
     "utf8",
   );
   await fs.writeFile(
@@ -570,7 +655,7 @@ async function buildNarration() {
         project: "TraceWarden SIFT",
         hero: "Prove 17 DFIR claims in 90 seconds.",
         target_duration_seconds: Math.round(cursor),
-        voice: "macOS:say:Samantha",
+        voice: voiceLabel,
         scenes: records.map((record) => ({
           id: record.id,
           duration: Number(record.duration_seconds.toFixed(2)),
@@ -727,7 +812,7 @@ ${rows}
 ## Motion And Audio Plan
 
 - Motion: component-lift proof moments, artifact-stack-3d receipt stack, proof-montage accuracy close, shared-object CLAIM-004 handoff, architecture-reveal pipeline, per-scene plate zoom, fade transitions.
-- Audio: macOS Samantha narration, HackathonHunter rights-cleared BGM, sidechain ducking, loudnorm.
+- Audio: Mimo ${MIMO_VOICE} narration, HackathonHunter rights-cleared BGM, sidechain ducking, loudnorm.
 - Subtitles: baked into the visual plates; SRT is saved at \`pitch/polish-combined/assets/captions.srt\`.
 - QA frames: \`pitch/polish-combined/qa/video-qa-*.png\`.
 `;

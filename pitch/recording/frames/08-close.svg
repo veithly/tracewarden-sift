@@ -24,19 +24,19 @@
   <g>
     <rect x="0" y="0" width="560" height="138" rx="18" fill="#111b23" stroke="#45d4c8" stroke-width="2" filter="url(#shadow)"/>
     <text x="30" y="48" font-family="Menlo, Consolas, monospace" font-size="26" font-weight="800" fill="#45d4c8">PITCH DECK · READY</text>
-    <text x="30" y="92" font-family="Inter, Helvetica, Arial, sans-serif" font-size="23" fill="#eff8f7">pitch/deck/tracewarden-sift-pitch.pptx</text>
+    <text x="30" y="88" font-family="Inter, Helvetica, Arial, sans-serif" font-size="21" font-weight="500" fill="#eff8f7">pitch/deck/tracewarden-sift-pitch.pptx</text>
   </g>
       
   <g>
     <rect x="0" y="176" width="560" height="138" rx="18" fill="#111b23" stroke="#75d38a" stroke-width="2" filter="url(#shadow)"/>
     <text x="30" y="224" font-family="Menlo, Consolas, monospace" font-size="26" font-weight="800" fill="#75d38a">VIDEO · READY</text>
-    <text x="30" y="268" font-family="Inter, Helvetica, Arial, sans-serif" font-size="23" fill="#eff8f7">pitch/recording/pitch-demo-combined-final.mp4</text>
+    <text x="30" y="264" font-family="Inter, Helvetica, Arial, sans-serif" font-size="21" font-weight="500" fill="#eff8f7">pitch/recording/pitch-demo-combined-final.mp4</text>
   </g>
       
   <g>
     <rect x="0" y="352" width="560" height="138" rx="18" fill="#111b23" stroke="#f2b760" stroke-width="2" filter="url(#shadow)"/>
     <text x="30" y="400" font-family="Menlo, Consolas, monospace" font-size="26" font-weight="800" fill="#f2b760">REPORTS · READY</text>
-    <text x="30" y="444" font-family="Inter, Helvetica, Arial, sans-serif" font-size="23" fill="#eff8f7">runs/demo + artifacts/sample-run</text>
+    <text x="30" y="440" font-family="Inter, Helvetica, Arial, sans-serif" font-size="21" font-weight="500" fill="#eff8f7">runs/demo + artifacts/sample-run</text>
   </g>
     </g>
     <rect x="848" y="410" width="850" height="390" rx="18" fill="#111b23" stroke="#2e4350" stroke-width="2" filter="url(#shadow)"/>
@@ -48,7 +48,8 @@
     <text x="898" y="860" font-family="Menlo, Consolas, monospace" font-size="24" fill="#45d4c8">Prove 17 DFIR claims in 90 seconds.</text>
   
   <g>
-    <rect x="78" y="938" width="1764" height="100" rx="16" fill="#050c12" opacity="0.78" stroke="#2e4350" stroke-width="2"/>
-    <text x="112" y="982" font-family="Inter, Helvetica, Arial, sans-serif" font-size="27" font-weight="750" fill="#eff8f7">Run the command, open the receipts, extend the parser set.</text>
+    <rect x="96" y="930" width="1500" height="98" rx="16" fill="#050c12" opacity="0.82" stroke="#2e4350" stroke-width="2"/>
+    <text x="132" y="974" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" font-weight="750" fill="#eff8f7">Run the command, open the receipts, extend the</text>
+<text x="132" y="1002" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" font-weight="750" fill="#eff8f7">parser set.</text>
   </g>
 </svg>
