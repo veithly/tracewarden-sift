@@ -2,6 +2,9 @@
   "project": "TraceWarden SIFT",
   "tagline": "Prove 17 DFIR claims in 90 seconds.",
   "hackathon": "FIND EVIL!",
+  "devpost_url": "https://devpost.com/software/tracewarden-sift",
+  "submission_status": "submitted",
+  "submitted_at_local": "2026-06-09 02:12 Asia/Shanghai",
   "repo_url": "https://github.com/veithly/tracewarden-sift",
   "video_url": "https://www.youtube.com/watch?v=mqaZrgKiehc",
   "deck_url": "https://github.com/veithly/tracewarden-sift/blob/main/pitch/deck/tracewarden-sift-deck.pdf",
@@ -36,7 +39,8 @@
     "video_resolution": "1920x1080",
     "video_audio": "Mimo narration, AAC, mean volume -16.2 dB, max volume 0.0 dB",
     "video_upload_status": "uploaded to YouTube as unlisted on 2026-06-09",
-    "video_upload_confirmation": "pitch/youtube-upload-confirmation-screenrecord-mimo.png"
+    "video_upload_confirmation": "pitch/youtube-upload-confirmation-screenrecord-mimo.png",
+    "devpost_submission_receipt": "pitch/submission-receipt.png"
   },
   "track_fit": {
     "autonomous_execution_quality": "Planner/tool/verifier/correct/write sequence is logged.",
@@ -48,5 +52,6 @@
     "One packaged log/timeline case rather than full SIFT catalog coverage.",
     "Deterministic local agent rules; future LLM planners can call the same verifier."
   ],
-  "human_confirmation_required": true
+  "human_confirmation_required": false,
+  "human_confirmation_received": "User explicitly requested Devpost submission in chat before final click."
 }
